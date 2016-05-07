@@ -1,6 +1,6 @@
 title:            Andrea Cipriani
 description:      Blog
-disqus_shortname: 
+disqus_shortname: AndreaCipriani89
 reading_time:     true
 words_per_minute: 200
 
@@ -12,14 +12,14 @@ url:
 owner:
   name:           Andrea Cipriani
   avatar:         avatar.png
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
+  bio:            "High level developer - iOS"
   email:          andrea.g.cipriani@gmail.com
 
   # Social networking links used in footer. Update and remove as you like.
   twitter: andreacipriani
-  facebook:       
+  #facebook:       
   github: andreacipriani         
-  stackexchange:  
+  stackexchange: andreacipriani
   linkedin:       
   instagram:      
   flickr:         
@@ -37,7 +37,7 @@ google_verify:
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Berlin
 future:      true
 highlighter: rouge
 markdown:    kramdown
