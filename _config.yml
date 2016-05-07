@@ -12,14 +12,14 @@ url:
 owner:
   name:           Andrea Cipriani
   avatar:         avatar.png
-  bio:            "High level developer - iOS"
+  bio:            "High level developer"
   email:          andrea.g.cipriani@gmail.com
 
   # Social networking links used in footer. Update and remove as you like.
   twitter: andreacipriani
   #facebook:       
   github: andreacipriani         
-  stackexchange: andreacipriani
+  stackoverflow: 872908/andreacipriani
   linkedin:       
   instagram:      
   flickr:         
