@@ -12,23 +12,9 @@ date: 2015-05-18T14:00:00-02:00
 
 # NSObject-AGCDescription
 
-TEST:
-
-```objective-c
-- (NSString*)description
-{
-return [self agc_description];
-}
-
-- (NSString*)debugDescription
-{
-return [self agc_debugDescription];
-}
-```
-
 ### Introduction
 
-```objc
+```objective-c
 - (NSString*)description
 {
 	😱 😱 😱 ⌛️⌛️⌛️
@@ -45,7 +31,7 @@ It's boring to write description methods. It's even more boring to keep them upd
 
 Given a simple class representing a User:
 
-```smalltalk
+```objective-c
 
 @interface AGCUser : NSObject
 
@@ -59,7 +45,7 @@ Given a simple class representing a User:
 
 Go the the implementation file, import the category:
 
-```objc
+```objective-c
 #import "NSObject+AGCDescription.h"
 ```
 
