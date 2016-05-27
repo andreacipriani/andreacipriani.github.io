@@ -1,16 +1,16 @@
 ---
-layout: post
-title: "Test syntax"
+layout: article
+title: "Test syntax in article"
 modified:
 categories: blog
 excerpt:
 tags: []
 image:
   feature:
-date: 2015-05-27T14:00:00-02:00
+date: 2015-05-27T15:00:00-02:00
 ---
 
-# test syntax highlighting
+# test syntax highlighting in article
 
 ### objective-c
 
