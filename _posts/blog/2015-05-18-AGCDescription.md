@@ -14,7 +14,7 @@ date: 2015-05-18T14:00:00-02:00
 
 TEST:
 
-~~~
+```objective-c
 - (NSString*)description
 {
 return [self agc_description];
@@ -24,10 +24,7 @@ return [self agc_description];
 {
 return [self agc_debugDescription];
 }
-
-~~~
-{: .language-objective_c}
-
+```
 
 ### Introduction
 
