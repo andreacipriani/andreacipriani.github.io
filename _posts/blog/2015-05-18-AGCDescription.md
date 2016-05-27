@@ -28,7 +28,7 @@ date: 2015-05-18T14:00:00-02:00
 }
 ```
 
-### objc
+### objectivec
 
 ```objectivec
 - (NSString*)description
@@ -41,6 +41,7 @@ date: 2015-05-18T14:00:00-02:00
 	return [self agc_debugDescription];
 }
 ```
+
 ### No name 
 
 ```
@@ -65,7 +66,7 @@ end
 puts fibonacci( 5 )
 ```
 
-# TEST pygments
+# TEST pygments objective-c
 
 {% highlight objective-c %}
 
@@ -81,6 +82,37 @@ puts fibonacci( 5 )
 
 {% endhighlight %}
 
+# TEST pygments objectivec
+
+{% highlight objective-c %}
+
+- (NSString*)description
+{
+	return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+	return [self agc_debugDescription];
+}
+
+{% endhighlight %}
+
+# TEST pygments objc
+
+{% highlight objc %}
+
+- (NSString*)description
+{
+	return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+	return [self agc_debugDescription];
+}
+
+{% endhighlight %}
 
 ### Introduction
 
