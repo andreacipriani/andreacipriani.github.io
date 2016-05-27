@@ -14,9 +14,9 @@ date: 2015-05-18T14:00:00-02:00
 
 ## TEST kramdown + rouge
 
-### objective-c:
+### objectivec:
 
-```objective-c
+```objectivec
 - (NSString*)description
 {
 	return [self agc_description];
@@ -28,7 +28,7 @@ date: 2015-05-18T14:00:00-02:00
 }
 ```
 
-###objc
+### objc
 
 ```objc
 - (NSString*)description
