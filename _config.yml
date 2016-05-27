@@ -5,7 +5,9 @@ locale: en_US
 description: Personal dev blog
 logo: agc.png
 search: true
-url: http://localhost:4000
+url: andreacipriani.github.io
+
+#http://localhost:4000
 
 # Jekyll configuration
 
