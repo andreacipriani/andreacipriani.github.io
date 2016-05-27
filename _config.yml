@@ -12,7 +12,7 @@ url:
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown:    pygments #kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
@@ -21,13 +21,13 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..2
-  enable_coderay: false
-  
+#kramdown:
+ # auto_ids: true
+ # footnote_nr: 1
+ # entity_output: as_char
+ # toc_levels: 1..2
+ # enable_coderay: false
+
 mathjax: true
 
 include: [".htaccess"]

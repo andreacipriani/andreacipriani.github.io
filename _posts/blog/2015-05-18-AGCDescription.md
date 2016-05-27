@@ -12,6 +12,22 @@ date: 2015-05-18T14:00:00-02:00
 
 # NSObject-AGCDescription
 
+TEST
+
+{% highlight objective-c %}
+
+- (NSString*)description
+{
+	return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+	return [self agc_debugDescription];
+}
+
+{% endhighlight %}
+
 ### Introduction
 
 ```objective-c
