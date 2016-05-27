@@ -1,4 +1,16 @@
-# Menu navigation links
+# Site navigation links
 
-#- title: Theme Setup
-#  url: /theme-setup/
+- title: Home
+  url: /
+
+- title: About me
+  url: /aboutme/
+
+#- title: Articles
+# url: /articles/
+
+- title: Blog
+  url: /blog/
+
+- title: Search
+  url: /search/
