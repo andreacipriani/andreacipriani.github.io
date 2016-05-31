@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AGCDescription
+title: Why I don’t code anymore description methods
 modified:
 categories: dev
 excerpt:
@@ -10,10 +10,7 @@ image:
 date: 2016-05-31T17:43:15+02:00
 ---
 
-
-# NSObject-AGCDescription
-
-### Introduction
+# No more description methods
 
 ```objective-c
 - (NSString*)description
@@ -26,9 +23,30 @@ It's boring to write description methods. It's even more boring to keep them upd
 
 🎉 Don't worry! It's time to let ```AGCDescription```do the dirty work for you! 🎉
 
-```AGCDescription``` is a category on ```NSObject``` which uses the Objective-c runtime potential to automatically build the description string of any of your classes. And if you gonna change the class, the description will be automatically updated. 
+## One step back
 
-### Example
+What is a description method? 
+
+The description method just *"returns a string that describes the contents of the receiver."* It's like the ```toString()``` method in Java.
+Description is a required method of the NSObject protocol, and it's only useful for debugging or logging.
+
+description vs debugDescription
+
+NSLog()
+po
+
+Long example:
+
+-(NSString*)description
+{
+	return [NSString stringWithFormat:@["<%@: %@, %@
+}
+
+## AGCDescription
+
+```AGCDescription``` is a category on ```NSObject``` which uses the Objective-C runtime potential to automatically build the description string of any of your classes. And if you gonna change the class, the description will be automatically updated. 
+
+### How to use it - Example
 
 Given a simple class representing a User:
 
@@ -161,37 +179,7 @@ Here are the rules to evaluate the property value:
 
 ### Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+AGCDescripton [is available on Github](https://github.com/andreacipriani/NSObject-AGCDescription) under the MIT license.
 
-### Requirements
-
-iOS 8+ and ARC
-
-### Installation
-
-AGCDescription is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "AGCDescription"
-```
-
-### Installation without Cocoapods
-
-Copy and paste all AGCDescription/Classes into your project.
-
-<!--
-
-TODO:
-### Contributions
-At the moment is well tested against the rules but  If you find it useful please contribute! 
--->
-
-### Author
-
-Andrea Cipriani, andrea.g.cipriani@gmail.com - Twitter [@AndreaCipriani](https://twitter.com/AndreaCipriani)
-
-### License
-
-AGCDescription is available under the MIT license. See the LICENSE file for more info.
+### Conclusion
 
