@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "AGCDescription"
+title: AGCDescription
 modified:
-categories: blog
+categories: dev
 excerpt:
 tags: []
 image:
   feature:
-date: 2015-05-18T14:00:00-02:00
+date: 2016-05-31T17:43:15+02:00
 ---
+
 
 # NSObject-AGCDescription
 
@@ -193,3 +194,4 @@ Andrea Cipriani, andrea.g.cipriani@gmail.com - Twitter [@AndreaCipriani](https:/
 ### License
 
 AGCDescription is available under the MIT license. See the LICENSE file for more info.
+
