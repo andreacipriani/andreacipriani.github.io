@@ -21,7 +21,11 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
 
-#kramdown:
+ kramdown: #default conf
+   input: GFM
+   hard_wrap: false
+
+#kramdown: #theme conf
 #auto_ids: true
 #footnote_nr: 1
 #entity_output: as_char
