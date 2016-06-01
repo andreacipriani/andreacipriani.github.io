@@ -10,10 +10,9 @@ image:
 date: 2016-05-31T18:29:30+02:00
 ---
 
-# objective-c
+# objectivec
 
-```objective-c
-
+```objectivec
 AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
 NSLog(@"%@",agcUser);
 
@@ -26,13 +25,28 @@ return [self agc_description];
 {
 return [self agc_debugDescription];
 }
+```
 
+# objective-c
+
+```objective-c
+AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
+NSLog(@"%@",agcUser);
+
+- (NSString*)description
+{
+return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+return [self agc_debugDescription];
+}
 ```
 
 # objc
 
 ```objc
-
 AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
 NSLog(@"%@",agcUser);
 
@@ -45,13 +59,11 @@ return [self agc_description];
 {
 return [self agc_debugDescription];
 }
-
 ```
 
-# without specifyng a language
+# without any language
 
 ```
-
 AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
 NSLog(@"%@",agcUser);
 
@@ -64,8 +76,25 @@ return [self agc_description];
 {
 return [self agc_debugDescription];
 }
-
 ```
+
+# % objectivec
+
+
+{% highlight objectivec %}
+AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
+NSLog(@"%@",agcUser);
+
+- (NSString*)description
+{
+return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+return [self agc_debugDescription];
+}
+{% endhighlight %}
 
 # % objective-c
 
