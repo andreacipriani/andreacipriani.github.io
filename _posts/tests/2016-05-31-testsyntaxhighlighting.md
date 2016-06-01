@@ -47,3 +47,58 @@ return [self agc_debugDescription];
 }
 
 ```
+
+# without specifyng a language
+
+```
+
+AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
+NSLog(@"%@",agcUser);
+
+- (NSString*)description
+{
+return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+return [self agc_debugDescription];
+}
+
+```
+
+# % objective-c
+
+
+{% highlight objective-c %}
+AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
+NSLog(@"%@",agcUser);
+
+- (NSString*)description
+{
+return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+return [self agc_debugDescription];
+}
+{% endhighlight %}
+
+# % objc
+
+
+{% highlight objc %}
+AGCUser* agcUser = [[AGCUser alloc] initWithUserId:@(123) username:@"Mick Jagger" password:@"angie123" userImage:[UIImage imageNamed:@"mick.png"]];
+NSLog(@"%@",agcUser);
+
+- (NSString*)description
+{
+return [self agc_description];
+}
+
+- (NSString*)debugDescription
+{
+return [self agc_debugDescription];
+}
+{% endhighlight %}
