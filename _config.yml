@@ -50,7 +50,6 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
-
 # Site owner
 owner:
   name: Andrea Cipriani
@@ -63,8 +62,8 @@ owner:
   #linkedin: #username
   google:
     #plus:
-    analytics:
-    verify:
+    analytics: UA-78614322-1
+    #verify: #verified with html page google826...
     ad-client:
     ad-slot:
     bing-verify:
