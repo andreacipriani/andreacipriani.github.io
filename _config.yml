@@ -23,14 +23,10 @@ gems:
 
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
-
-#kramdown: #theme conf
-#auto_ids: true
-#footnote_nr: 1
-#entity_output: as_char
-#toc_levels: 1..2
-#enable_coderay: false
+  auto_ids: true
+  footnote_nr: 1
 
 mathjax: true
 
