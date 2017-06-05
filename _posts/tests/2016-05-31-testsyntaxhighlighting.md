@@ -118,3 +118,40 @@ BASIC_LENGTH = 10
 end
 
 ```
+
+# Swift
+
+```swift
+
+class BankAccount {
+
+    internal private(set) var balance: Int
+    private let initialBalance: Int
+
+    init(initialBalance: Int = 80) {
+        self.initialBalance = initialBalance
+        self.balance = initialBalance
+    }
+
+    func resetBalance(){
+        self.balance = initialBalance
+    }
+
+    func withdraw(amount: Int, completion: @escaping (Result<Int, BankError>) -> Void) {
+        if (balance < amount) {
+            printWithThread("👎 You can't withdraw \(amount)$ since your balance is \(balance)$")
+            completion(.failure(BankError.insufficientBalance))
+        }
+
+        printWithThread("👍 Your balance is higher than \(amount)$, preparing withdraw...")
+        waitForWindowsXPLatency()
+        balance -= amount
+        printWithThread("💰 Successfully withdrawn \(amount)$. Your new balance is \(balance)$")
+        completion(.success(balance))
+    }
+
+    func waitForWindowsXPLatency() {
+        sleep(2)
+    }
+}
+```
