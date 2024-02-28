@@ -1,5 +1,8 @@
 # al-folio
 
+## Andrea's notes
+- The navigation menu is defined by the entries in _pages
+
 <div align="center">
 
 [![Preview](assets/img/readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
@@ -193,6 +196,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
 ## Table Of Contents
 
 - [al-folio](#al-folio)
+  - [Andrea's notes](#andreas-notes)
   - [User community](#user-community)
   - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
     - [Desktop](#desktop)

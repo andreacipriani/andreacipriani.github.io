@@ -1,16 +1,16 @@
 ---
 layout: page
-title: submenus
+title: inspiration
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
+  - title: books
+    permalink: /books/
   - title: divider
-  - title: projects
-    permalink: /projects/
+  - title: quotes
+    permalink: /quotes/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: movies
+    permalink: /movies/
 ---
