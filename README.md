@@ -3,6 +3,8 @@
 ## Andrea's notes
 - The navigation menu is defined by the entries in _pages
 
+---
+
 <div align="center">
 
 [![Preview](assets/img/readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
