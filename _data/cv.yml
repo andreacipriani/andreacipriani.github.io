@@ -2,31 +2,24 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Andrea Cipriani
     - name: Languages
-      value: English, German
+      value: English, Italian
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Science in Computer Science
+      institution: Università Degli Studi Di Milano
+      year: 2013
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Held three lectures on Mobile Computing at University of Milan about how to make a commercial app from a prototype.
+        - Thesis in TODO
+    - title: Bachelor of Science in Computer Science
+      institution: Università Degli Studi Di Milano
+      year: 2011
       description:
-        - Description 1.
-        - Description 2.
+        - Thesis in...
 
 - title: Experience
   type: time_table
