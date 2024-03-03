@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Veer
+description: Veer your life towards comfort.
+img: assets/img/veer.png
+importance: 2
+category: work
+giscus_comments: false
 ---
 
 Every project has a beautiful feature showcase page.

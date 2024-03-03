@@ -6,19 +6,9 @@
 {
   "basics": {
     "name": "Andrea Cipriani",
-    "role": "Software Engineer",
-    "image": "",
-    "email": "",
-    "phone": "",
-    "citizenship": "American, Italian",
+    // "role": "Software Engineer",
     "summary": "A Software Engineer specialized in building Mobile applications at scale.",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "New York",
-      "countryCode": "",
-      "region": ""
-    },
+    "citizenship": "American, Italian",
     "profiles": [
       {
         "network": "Github",
@@ -41,7 +31,7 @@
       "position": "Senior Software Engineer",
       "startDate": "2020",
       "endDate": "2023",
-      "summary": "I worked on improving the mobile architecture to scale with the busines, built infrastructure and tooling to increase the velocity of the mobile engineers.",
+      "summary": "I led the creation of a multi-platform dependency injection framework, standardized mobile microservices, and optimized iOS app startup, while also implementing modularization efforts and infrastructure for demo apps using the Bazel build system.",
       "highlights": ["Mobile Engineering Strategy", "Modularization", "Bazel"]
     },
     {

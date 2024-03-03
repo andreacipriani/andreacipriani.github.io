@@ -2,12 +2,19 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Some (side) projects I've worked on.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+# display_categories: [work]
 horizontal: false
 ---
+
+<!-- TODO: 
+maybe use categories and have 
+- Side projects
+- Work (what can I add here, SC tuist migration, Nucleus?)
+- Startup (veecards veer)
+-->
 
 <!-- pages/projects.md -->
 <div class="projects">
