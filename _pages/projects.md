@@ -5,15 +5,15 @@ permalink: /projects/
 description: Some (side) projects I've worked on.
 nav: true
 nav_order: 3
-# display_categories: [work]
+display_categories: [side-projects, work, ideas]
 horizontal: false
 ---
 
 <!-- TODO: 
 maybe use categories and have 
-- Side projects
-- Work (what can I add here, SC tuist migration, Nucleus?)
-- Startup (veecards veer)
+- Side projects: Today, Memore (idea)?
+- Work: SC tuist migration, Nucleus?, Backend Driven UI
+- Startup: Veecards, Veer
 -->
 
 <!-- pages/projects.md -->

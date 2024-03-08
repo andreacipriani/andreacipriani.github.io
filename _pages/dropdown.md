@@ -1,6 +1,6 @@
 ---
 layout: page
-title: inspiration
+title: my favourite
 nav: true
 nav_order: 8
 dropdown: true

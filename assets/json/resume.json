@@ -1,14 +1,15 @@
 // TODOs:
 // add Tuist SoundCloud blog
 // add open source entry
-// improve bullet points for Spotify and skills
-// add Today app
+// improve skills
+// add Today app as project
 {
   "basics": {
     "name": "Andrea Cipriani",
     // "role": "Software Engineer",
     "summary": "A Software Engineer specialized in building Mobile applications at scale.",
     "citizenship": "American, Italian",
+    "residence": "New York",
     "profiles": [
       {
         "network": "Github",
@@ -56,7 +57,7 @@
       "startDate": "2013",
       "endDate": "2016",
       "summary": "Started a company to improve contact's management. Developed and launched two products on the store: Veecards and Veer.",
-      "highlights": ["iOS", "Backend", "Google Cloud"]
+      "highlights": ["Startups", "iOS", "Backend", "Google Cloud"]
     }
   ],
 // add open source
@@ -139,8 +140,8 @@
   "projects": [
     {
       "name": "Today, a To-Do app.",
-      "summary": "A macOS To-Do app for hackers.",
-      "highlights": ["SwiftUI", "macOS"],
+      "summary": "A macOS To-Do app for pro users.",
+      "highlights": ["SwiftUI", "AppKit"],
       "startDate": "2023",
       "endDate": "2024",
       "url": "https://www.todoapp.today"
