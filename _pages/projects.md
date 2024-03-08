@@ -5,7 +5,7 @@ permalink: /projects/
 description: Some (side) projects I've worked on.
 nav: true
 nav_order: 3
-display_categories: [side-projects, work, ideas]
+display_categories: [side-projects, work]
 horizontal: false
 ---
 

@@ -3,8 +3,8 @@ layout: page
 title: Memore
 description: Memore. Me, more.
 img: assets/img/memore.png
-importance: 1
-category: ideas
+importance: 0
+category: side-projects
 giscus_comments: true
 ---
 
