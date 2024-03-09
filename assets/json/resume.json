@@ -60,7 +60,7 @@
       "highlights": ["Startups", "iOS", "Backend", "Google Cloud"]
     }
   ],
-// add open source
+  // add open source
   "education": [
     {
       "institution": "Università degli studi di Milano",
@@ -89,20 +89,12 @@
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-laptop",
-      "keywords": [
-        "Swift",
-        "Objective-C",
-        "Kotlin"
-      ]
+      "keywords": ["Swift", "Objective-C", "Kotlin"]
     },
     {
       "name": "Frameworks",
       "icon": "fa-solid fa-hammer",
-      "keywords": [
-        "UIKit",
-        "SwiftUI",
-        "Firebase"
-      ]
+      "keywords": ["UIKit", "SwiftUI", "Firebase"]
     }
   ],
   "languages": [

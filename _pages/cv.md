@@ -9,4 +9,5 @@ description: Last update in March 2024.
 toc:
   sidebar: left
 ---
+
 <!-- resume.json contains the info. PDF is in assets/pdf>

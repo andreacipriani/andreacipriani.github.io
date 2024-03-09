@@ -23,11 +23,11 @@ While currently available only for macOS, we might make an iOS companion app wit
     With a minimalist setup, focused on simplicity and efficiency, the app is fully navigatable with the keyboard.
 </div>
 
-#### SwiftUI 
+#### SwiftUI
 
 Today is my first app developed using SwiftUI!
 
-Working with SwiftUI was a lot of fun, it facilitated rapid layout creation and made it extremely easy to build a responsive user interface through state observation. However, as anticipated, certain UI intricacies fell short in comparison to AppKit/UIKit. For example, something as simple as setting the background of a TextField to be transparent [didn't work if such TextField was inside a List]((https://stackoverflow.com/questions/78035722/transparent-textfield-inside-macos-swiftui-list)). 
+Working with SwiftUI was a lot of fun, it facilitated rapid layout creation and made it extremely easy to build a responsive user interface through state observation. However, as anticipated, certain UI intricacies fell short in comparison to AppKit/UIKit. For example, something as simple as setting the background of a TextField to be transparent [didn't work if such TextField was inside a List](<(https://stackoverflow.com/questions/78035722/transparent-textfield-inside-macos-swiftui-list)>).
 
 You can try this yourself and observe that the clear background of the TextField inside a list is not respected:
 
@@ -57,6 +57,7 @@ struct ContentView: View {
     }
 }
 ```
+
 <div class="caption">
     An example of SwifUI having some limitations on styling a UI element.
 </div>
@@ -79,7 +80,7 @@ struct KeyEventHandling: NSViewRepresentable {
     }
     return KeyView.shared
   }
-  
+
   func updateNSView(_ nsView: NSView, context: Context) {}
 }
 
@@ -141,4 +142,4 @@ For example, creating a transparent padding between the main view containing the
     </div>
 </div>
 
-[comment]: # (TODO: add download button)
+[comment]: # "TODO: add download button"

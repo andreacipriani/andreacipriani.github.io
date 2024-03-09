@@ -9,8 +9,8 @@ display_categories: [side-projects, work]
 horizontal: false
 ---
 
-<!-- TODO: 
-maybe use categories and have 
+<!-- TODO:
+maybe use categories and have
 - Side projects: Today, Memore (idea)?
 - Work: SC tuist migration, Nucleus?, Backend Driven UI
 - Startup: Veecards, Veer

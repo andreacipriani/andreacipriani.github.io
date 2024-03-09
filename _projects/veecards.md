@@ -70,4 +70,3 @@ I built the iOS app with UIKit in Objective-C. The app included authentication, 
 </div>
 
 With the other co-founders, I also worked on the backend, which was built in Java on top of (what at the time was called) "Google App Engine" and included a [CardDAV](https://en.wikipedia.org/wiki/CardDAV) server to share and update contacts.
-
