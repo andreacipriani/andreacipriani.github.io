@@ -27,7 +27,7 @@ While currently available only for macOS, we might make an iOS companion app wit
 
 Today is my first app developed using SwiftUI!
 
-Working with SwiftUI was a lot of fun, it facilitated rapid layout creation and made it extremely easy to build a responsive user interface through state observation. However, as anticipated, certain UI intricacies fell short in comparison to AppKit/UIKit. For example, something as simple as setting the background of a TextField to be transparent [didn't work if such TextField was inside a List](<(https://stackoverflow.com/questions/78035722/transparent-textfield-inside-macos-swiftui-list)>).
+Working with SwiftUI was a lot of fun, it facilitated rapid layout creation and made it extremely easy to build a responsive user interface through state observation. However, as anticipated, certain UI intricacies fell short in comparison to AppKit/UIKit. For example, something as simple as setting the background of a TextField to be transparent [didn't work if such TextField was inside a List](https://stackoverflow.com/questions/78035722/transparent-textfield-inside-macos-swiftui-list).
 
 You can try this yourself and observe that the clear background of the TextField inside a list is not respected:
 
