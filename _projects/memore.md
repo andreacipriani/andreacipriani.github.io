@@ -39,7 +39,7 @@ One example is your daily mood, one of the key metrics you want to optimize for.
 
 #### Memore
 
-The name: [Memore](https://en.wiktionary.org/wiki/memore) in Latin means "retaining memory", that refers to the act of collecting all the data we can about ourselves; but if you read *Memore* in English, it's "Me, more" - that is the effect of using the data to set up good habits and work towards a better version of yourself. I love this name for the idea and I've reserved a domain for it at [www.memore.ai](www.memore.ai) :)
+The name: [Memore](https://en.wiktionary.org/wiki/memore) in Latin means "retaining memory", that refers to the act of collecting all the data we can about ourselves; but if you read *Memore* in English, it's "Me, more" - that is the effect of using the data to set up good habits and work towards a better version of yourself. I love this name for the idea and I've reserved a domain for it at [www.memore.ai](http://www.memore.ai) :)
 
 The idea could be summarized as follows:
 

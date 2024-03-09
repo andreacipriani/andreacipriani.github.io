@@ -8,7 +8,7 @@ category: work
 giscus_comments: false
 ---
 
-While working on Veecards' launch – in Italy between 2013-2016 at [Code Atlas SRL](www.codeatlas.it) – we decided to build [Veer](www.veecards.com/veer): a companion app to support the interactions with your favourite contacts.
+While working on Veecards' launch – in Italy between 2013-2016 at [Code Atlas SRL](https://www.codeatlas.it) – we decided to build [Veer](http://www.veecards.com/veer): a companion app to support the interactions with your favourite contacts.
 
 
 Watch an intro video:
@@ -25,7 +25,7 @@ Watch an intro video:
 </div>
 <br/>
 
-[Veer](www.veecards.com/veer) is a simple app and widget to interact with your favourite contacts through your most liked applications.
+[Veer](http://www.veecards.com/veer) is a simple app and widget to interact with your favourite contacts through your most liked applications.
 
 Engineered with user comfort in mind, the Android version emphasizes ergonomic design, enabling effortless navigation with just a thumb's movement.
 On iOS, Veer pioneered widget functionality, seamlessly integrating with the notification center and allowing a "one-tap" interaction with the user's favourite contacts.

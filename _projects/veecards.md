@@ -8,7 +8,7 @@ category: work
 related_publications: false
 ---
 
-During my first startup adventure – in Italy between 2013-2016 at [Code Atlas SRL](www.codeatlas.it) – we designed and built [Veecards](www.veecards.com): an app to improve contacts' management.
+During my first startup adventure – in Italy between 2013-2016 at [Code Atlas SRL](https://www.codeatlas.it) – we designed and built [Veecards](http://www.veecards.com): an app to improve contacts' management.
 
 Watch an intro video:
 
