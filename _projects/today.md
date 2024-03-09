@@ -119,15 +119,14 @@ Many places in the app can attempt to focus the TextField. For example, when ope
 Finally, the TextField implementation can react when receiving such notification and update its internal focus state:
 
 ```swift
-    CustomTextFieldImplementation() // not showing for brevity
-      .onReceive(.shouldFocusAddItem) { _ in
+CustomTextFieldImplementation() // not showing for brevity
+    .onReceive(.shouldFocusAddItem) { _ in
         DispatchQueue.main.async {
-          self.shouldFocus = true // A @State variable that controls the focus
-          // When focusing the text field, we don't want any ToDo items to be selected or in editing mode
-          viewState.currentSelectedItem = nil
-          viewState.currentEditedItem = nil
-        }
-      }
+            self.shouldFocus = true // A @State variable that controls the focus or in editing mode
+        viewState.currentSelectedItem = nil
+        viewState.currentEditedItem = nil
+    }
+}
 ```
 
 #### Popovers on macOS
@@ -141,5 +140,9 @@ For example, creating a transparent padding between the main view containing the
         {% include figure.liquid loading="eager" path="assets/img/today-help.png" title="Today with help view" class="img-fluid rounded" height="150" height="auto" %}
     </div>
 </div>
+
+#### Download Today for macOS
+
+If you like a minimal ToDo app optimized for pro macOS users, it's free... [give it a try](https://sphere-arrest-659920.framer.app/#waitlist)!
 
 [comment]: # "TODO: add download button"
