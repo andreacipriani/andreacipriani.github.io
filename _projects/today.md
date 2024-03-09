@@ -138,7 +138,7 @@ For example, creating a transparent padding between the main view containing the
 
 <div class="row">
     <div class="col-sm d-flex justify-content-center">
-        {% include figure.liquid loading="eager" path="assets/img/popover-help.png" title="Today with help view" class="img-fluid rounded" width="300" height="auto" %}
+        {% include figure.liquid loading="eager" path="assets/img/today-help.png" title="Today with help view" class="img-fluid rounded" height="150" height="auto" %}
     </div>
 </div>
 
