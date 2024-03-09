@@ -5,7 +5,7 @@ description: Bring your contacts to life.
 img: assets/img/veecards.png
 importance: 1
 category: work
-related_publications: false
+giscus_comments: false
 ---
 
 During my first startup adventure – in Italy between 2013-2016 at [Code Atlas SRL](https://www.codeatlas.it) – we designed and built [Veecards](http://www.veecards.com): an app to improve contacts' management.
