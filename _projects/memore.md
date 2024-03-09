@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Memore
+title: Memore.ai
 description: Memore. Me, more.
 img: assets/img/memore.png
-importance: 0
+importance: 3
 category: side-projects
 giscus_comments: true
 ---
@@ -26,7 +26,7 @@ For example, forming strong *habits* has been a big trend in the latest years. L
 Also, tech support for Health and Fitness is constantly evolving and had its highest peak during the pandemic. From roughly a million of people cycling at home on their Peloton, to folks like [Bryan Johnson](https://en.wikipedia.org/wiki/Bryan_Johnson) pushing the limits by tracking every conceivable health parameter to keep their biological age as low as possible.
 Lastly, the boom of genAI has brought life coaching and therapy among the most common examples where LLMs could do a great job into guiding us to do the right things.
 
-Generally, I think that we are still missing the opportunity of collecting the most important data, the data about ourselves and our life. While wearables started collecting some of it, mostly related to fitness and health, and [whoop](https://www.whoop.com/) brought data analysis and coaching to the next level, there is still plenty of important metrics that we are missing, some of which require manual data entry and are hard to track.
+Despite all of this, I think that we are still missing the opportunity of collecting the most important data, the data about ourselves and our life. While wearables started collecting some of it, mostly related to fitness and health, and [whoop](https://www.whoop.com/) brought data analysis and coaching to the next level, there is still plenty of important metrics that we are missing, some of which require manual data entry and are hard to track.
 
 One example is your daily mood, one of the key metrics you want to optimize for. Apple has recently added a feature for tracking it in the Health app, but it doesn't look like they found a way of making this an engaging experience yet.
 
@@ -46,7 +46,7 @@ The idea could be summarized as follows:
  1. Collect data about your life, health and fitness in a private and automated way through integrations with wearables and external systems
  2. Collect manual data - using a human-like chat interface - for habit tracking, mood and other metrics that can't be automated yet
  3. Improve yourself with an AI life coach: smart motivational customized messages at the right time could help you make informed decisions, stick to your habits and reach your goals
- 4. Run the equivalent of A/B testing on yourself. Do I improve my mood by avoiding more than 3 hours of screen time? Do I sleep better when I go to the gym? What is too much social activity for me in a week? Test it.
+ 4. Run A/B tests on yourself. Do you improve your mood by avoiding more than 3 hours of screen time? Do you sleep better when you go to the gym? What is too much social activity for you in a week? Test it.
 
 #### What do you think?
 
