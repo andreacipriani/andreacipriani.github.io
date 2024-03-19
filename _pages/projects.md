@@ -14,6 +14,7 @@ maybe use categories and have
 - Side projects: Today, Memore (idea)?
 - Work: SC tuist migration, Nucleus?, Backend Driven UI
 - Startup: Veecards, Veer
+- Talks: BDUI, ...
 -->
 
 <!-- pages/projects.md -->

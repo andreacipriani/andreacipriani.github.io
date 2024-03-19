@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Andrea Cipriani's space # the website title (if blank, full name will be used instead)
+title: Andrea Cipriani # the website title (if blank, full name will be used instead)
 first_name: Andrea
 middle_name:
 last_name: Cipriani
@@ -39,7 +39,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
