@@ -10,9 +10,7 @@ giscus_comments: true
 
 They say that every engineer has to build a To-Do app in their life.
 
-[Today](https://sphere-arrest-659920.framer.app/) is my implementation of a To-Do app, designed by my former colleague and ping pong office rival, [Julian Panzer](https://julianpanzer.com/). It is available exclusively for macOS users and it resides discreetly on the menu bar, always within reach. It is optimized for being used entirely with the keyboard, for pro users like us ;)
-
-While currently available only for macOS, we might make an iOS companion app with some more time in the future.
+[Today](https://sphere-arrest-659920.framer.app/) is my implementation of a To-Do app, designed by my former colleague and ping pong office rival, [Julian Panzer](https://julianpanzer.com/). It is available exclusively for macOS users and it resides discreetly on the menu bar, always within reach. Today is optimized for being used entirely with the keyboard, for pro users like us ;)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -23,7 +21,11 @@ While currently available only for macOS, we might make an iOS companion app wit
     With a minimalist setup, focused on simplicity and efficiency, the app is fully navigatable with the keyboard.
 </div>
 
-#### SwiftUI
+If you would like to try it, it's free, [download it here!](https://sphere-arrest-659920.framer.app/#waitlist)
+
+[comment]: # "TODO: add download button"
+
+### Building process and challenges
 
 Today is my first app developed using SwiftUI!
 
@@ -62,7 +64,7 @@ struct ContentView: View {
     An example of SwifUI having some limitations on styling a UI element.
 </div>
 
-##### Keyboard integration
+#### Keyboard integration
 
 Keyboard control is the main differentatior for Today and implementing it was fairly easy. The idea is to add an invisible view as the background of the parent content view, such as:
 
@@ -140,9 +142,3 @@ For example, creating a transparent padding between the main view containing the
         {% include figure.liquid loading="eager" path="assets/img/today-help.png" title="Today with help view" class="img-fluid rounded" height="150" height="auto" %}
     </div>
 </div>
-
-#### Download Today for macOS
-
-If you like a minimal ToDo app optimized for pro macOS users, it's free... [give it a try](https://sphere-arrest-659920.framer.app/#waitlist)!
-
-[comment]: # "TODO: add download button"
