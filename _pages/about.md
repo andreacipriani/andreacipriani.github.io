@@ -19,13 +19,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Ciao! I'm Andrea, an Italian Software Engineer based in nyc with a passion for mobile development at scale and iOS.
+Ciao! I'm Andrea, an Italian Software Engineer based in nyc and I specialize in mobile development at scale and iOS.
 
 When I'm not immersed in code, I love exploring new places, playing (racket) sports – I fenced for a long time – taking a dip in the ocean, testing my skills at Texas Hold’em poker and appreciating culture and arts.
 
 You can get to know me here. Read about some of the [projects](/projects) I've worked on, look at my [cv](/cv/) if you consider [hiring me](/news/hire-me/), leave a comment on my [notes](/notes/) and learn what some of my favourite things are, including [movies](/movies/), [books](/books), [quotes](/quotes/) and... my favourite pizza in nyc :)
 
-On my ~~blog~~ [notes](/blog), I'll dive into topics ranging from software engineering to reviews of my favorite movies and books. Here is what's coming next: I'll analyze the odds of winning at Blackjack by counting cards, share my thoughts on the mind-bending movie "Everything Everywhere All at Once" with the idea of the complete multiverse and a reflection on how the pay system in [FAANG](https://www.urbandictionary.com/define.php?term=FAANG) is pure gambling.
+On my ~~blog~~ [notes](/blog), I'll dive into topics ranging from software engineering to reviews of my favorite movies and books. Here is what's coming next: I'll analyze the odds of winning at Blackjack by counting cards, share my thoughts on the complete multiverse from the movie "Everything Everywhere All at Once" and a reflection on how the pay system in [FAANG](https://www.urbandictionary.com/define.php?term=FAANG) is pure gambling.
 
 <style>
   /* Custom onHover effect for profile pic. TODO: add VR glasses on-hover*/
