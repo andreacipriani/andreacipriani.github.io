@@ -1,0 +1,64 @@
+favorites:
+  - title: Everything Everywhere All at Once
+    image: https://m.media-amazon.com/images/M/MV5BYTdiOTIyZTQtNmQ1OS00NjZlLWIyMTgtYzk5Y2M3ZDVmMDk1XkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_UY209_CR2,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt6710474
+  - title: The dreamers
+    image: https://m.media-amazon.com/images/M/MV5BN2JlNDM0YjQtNjg3NC00MWY0LTk0MmMtMTVkMmU0MDQ4MGMzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0309987/
+  - title: La grande bellezza 
+    image: https://m.media-amazon.com/images/M/MV5BMTQ0ODg1OTQ2Nl5BMl5BanBnXkFtZTgwNTc2MDY1MDE@._V1_UY209_CR1,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt2358891/
+  - title: True Romance
+    image: https://m.media-amazon.com/images/M/MV5BYWRhYWJjNGEtMjNhNi00NzFkLTk1ZGUtNjNmM2FlNTNhNWRjXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0108399
+  - title: Enter the Void
+    image: https://m.media-amazon.com/images/M/MV5BMGQwMWRmODEtYzYwMy00MzFiLWJhYWUtNWNkNWM0NWZhODBiXkEyXkFqcGdeQXVyNjQyMjcwNDM@._V1_UY209_CR1,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt1191111/?ref_=rt_li_i
+  - title: Memento
+    image: https://m.media-amazon.com/images/M/MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR1,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0209144
+  - title: The Big Lebowski
+    image: https://m.media-amazon.com/images/M/MV5BMzliZDk0NjctNjhlOC00MWEyLWI3OWYtNjA5ZDYxMTMzNTc5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_UY209_CR1,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0118715/
+  - title: Swept away
+    image: https://m.media-amazon.com/images/M/MV5BMWYyMWJjN2MtMmUzYS00NDBmLWEyMWYtMWQ1MTdkNDAxMTg1XkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_UY209_CR3,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0073817/
+  - title: Amélie
+    image: https://m.media-amazon.com/images/M/MV5BNDg4NjM1YjMtYmNhZC00MjM0LWFiZmYtNGY1YjA3MzZmODc5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX140_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0211915
+  - title: Vicky Cristina Barcelona
+    image: https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0497465
+  - title: Carnage
+    image: https://m.media-amazon.com/images/M/MV5BMTc4MjAyMDUwNl5BMl5BanBnXkFtZTcwOTQwMDMwNw@@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt1692486
+  - title: Requiem for a Dream
+    image: https://m.media-amazon.com/images/M/MV5BOTdiNzJlOWUtNWMwNS00NmFlLWI0YTEtZmI3YjIzZWUyY2Y3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0180093
+  - title: Anchiporuno
+    image: https://m.media-amazon.com/images/M/MV5BOWU5YmMwMDktNzJkZi00NWRiLWFmYTYtODY4MjIyN2ZlYjA2XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt5973032/
+  - title: Loro
+    image: https://m.media-amazon.com/images/M/MV5BYTAxNzU4ZjUtMTFkNy00MzM0LWExNmQtN2RjYTM0ZTExMGYzXkEyXkFqcGdeQXVyMzIwNDY4NDI@._V1_UY209_CR3,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt6748466/
+  - title: Adaptation
+    image: https://m.media-amazon.com/images/M/MV5BN2JjNzVhOTMtNTc3Yi00NGNjLWI3YjgtYjkyZTYzY2FmMmIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0268126/?ref_=rt_li_i
+  - title: Moonrise Kingdom
+    image: https://m.media-amazon.com/images/M/MV5BMTEwMTc3NDkzOTJeQTJeQWpwZ15BbWU3MDI4NTAwNzc@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt1748122/?ref_=rt_li_i
+  - title: Before Sunrise
+    image: https://m.media-amazon.com/images/M/MV5BZDdiZTAwYzAtMDI3Ni00OTRjLTkzN2UtMGE3MDMyZmU4NTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0112471/?ref_=rt_li_i
+  - title: Breakfast at Tiffany's
+    image: https://m.media-amazon.com/images/M/MV5BNGEwMTRmZTQtMDY4Ni00MTliLTk5ZmMtOWMxYWMyMTllMDg0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX140_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0054698
+  - title: Reservoir Dogs
+    image: https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt0105236
+  - title: Poor Things
+    image: https://m.media-amazon.com/images/M/MV5BNGIyYWMzNjktNDE3MC00YWQyLWEyMmEtN2ZmNzZhZDk3NGJlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt14230458/
+  - title: My Octopus Teacher
+    image: https://m.media-amazon.com/images/M/MV5BODFkYThkMGItYzczYS00NmU2LWFiZjctNmFmZWNiM2NkM2M1XkEyXkFqcGdeQXVyMTU3NDU4MDg2._V1_UY209_CR3,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt12888462

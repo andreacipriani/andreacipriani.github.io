@@ -1,0 +1,25 @@
+/*****************************
+ * CV shared styles
+ *****************************/
+
+ .movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+.movie-item {
+  text-align: center;
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.movie-item p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: semibold;
+}

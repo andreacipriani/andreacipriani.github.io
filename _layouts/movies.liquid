@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h3 class="post-title">{{ page.title }}</h3>
+    <sub>{{ page.description }}</sub>
+    <p></p>
+  </header>
+    <div class="movies-grid">
+        {% for movie in site.data.movies.favorites %}
+        <div class="movie-item">
+            <a href="{{ movie.imdb_link }} target="_blank">
+            <img src="{{ movie.image }} alt="Image 2">
+            </a>
+            <p onclick="window.open('{{ movie.imdb_link }}', '_blank')">{{ movie.title }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{{ content }}
+</div>
