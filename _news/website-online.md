@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The first version of my personal website is online!
+The first version of my website is online!
