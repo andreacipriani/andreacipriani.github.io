@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Andrea Cipriani # the website title (if blank, full name will be used instead)
+title: Andrea Cipriani
 first_name: Andrea
 middle_name:
 last_name: Cipriani
 email: andreacipriani89@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  What I like, what I think, what I'm doing!
+  Andrea Cipriani's digital world.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -122,8 +122,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Andrea Cipriani's blog # blog_name will be displayed in your blog page
-blog_description: My digital memories
+blog_name: Andrea's notes # blog_name will be displayed in your blog page
+blog_description: Sparse thoughts on what I find interesting
 permalink: /blog/:year/:title/
 
 # Pagination

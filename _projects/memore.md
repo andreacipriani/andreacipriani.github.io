@@ -50,6 +50,6 @@ The idea could be summarized as follows:
 
 #### What do you think?
 
-If you're keen to be one of the first to try out our prototype on Telegram or just wanna chat about this idea, give me a shout or drop a comment!
+If you're keen on being a early bird and try out the prototype on Telegram, or just wanna chat about this idea, give me a shout or drop a comment!
 
 [comment]: # "TODO: add screenshot of telegram chat, talk about chat as input"
