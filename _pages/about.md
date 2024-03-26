@@ -11,7 +11,7 @@ profile:
     <p>🇮🇹 Software Engineer</p>
     <p>🍏 iOS expert</p>
     <p>🗽 Based in New York</p>
-    <p>But really: 🎥🤺🎾📚🛫🤿🧐</p>
+    <p>But really: 🎥🤺🎾🛫🌊</p>
 
 news: true # includes a list of news items
 latest_posts: true # includes a list of the newest posts
