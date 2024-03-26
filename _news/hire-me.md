@@ -14,7 +14,7 @@ I have been working with iOS apps for more than 10 years, and have seen mobile a
 
 During a decade spent on mobile development, I have seen different approaches to the most common "apps problems" and learned what works best based on the context and company stage.
 
-I can offer strategical consultancy – for example: how to setup a hiring process to maximize talent reach, how to modularize the codebase to go from 10 modules to 100 – or can help directly with "hands on" tasks, for example in 2024 I was hired by a startup to setup a new project using [Tuist](https://tuist.io/)/[TCA](https://github.com/pointfreeco/swift-composable-architecture).
+I can offer strategic consultancy – for example: how to setup a hiring process to maximize talent reach, how to modularize the codebase to go from 10 modules to 100 – or can help directly with "hands on" tasks, for example in 2024 I was hired by a startup to setup a new project using [Tuist](https://tuist.io/)/[TCA](https://github.com/pointfreeco/swift-composable-architecture).
 
 
 <div class="row" style="display: flex; justify-content: center;">
@@ -27,7 +27,7 @@ I can offer strategical consultancy – for example: how to setup a hiring proce
 ##### Topics I could help you with:
 
 - Improving your architecture to scale up with the business
-- Improving your build infrastructure and reduce built times
+- Improving your build infrastructure and reduce build times
 - Shrinking your app startup time
 - Controlling your UI from the backend
 - Implement a Design System
