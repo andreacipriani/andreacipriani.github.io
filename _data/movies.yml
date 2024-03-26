@@ -32,9 +32,12 @@ favorites:
   - title: Requiem for a Dream
     image: https://m.media-amazon.com/images/M/MV5BOTdiNzJlOWUtNWMwNS00NmFlLWI0YTEtZmI3YjIzZWUyY2Y3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt0180093
-  - title: Anchiporuno
-    image: https://m.media-amazon.com/images/M/MV5BOWU5YmMwMDktNzJkZi00NWRiLWFmYTYtODY4MjIyN2ZlYjA2XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg
-    imdb_link: https://www.imdb.com/title/tt5973032/
+  # - title: Anchiporuno
+  #   image: https://m.media-amazon.com/images/M/MV5BOWU5YmMwMDktNzJkZi00NWRiLWFmYTYtODY4MjIyN2ZlYjA2XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg
+  #   imdb_link: https://www.imdb.com/title/tt5973032/
+  - title: Her
+    image: https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_UY209_CR0,0,140,209_AL_.jpg
+    imdb_link: https://www.imdb.com/title/tt1798709/
   - title: Loro
     image: https://m.media-amazon.com/images/M/MV5BNDJhZGZhN2QtNWE3My00NTE2LWE4ZmItODU1YmU5OWRhOTEwXkEyXkFqcGdeQXVyODY3Nzc0OTk@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt10182822/?ref_=rt_li_i
