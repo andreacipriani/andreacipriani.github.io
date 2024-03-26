@@ -13,4 +13,7 @@ children:
   - title: divider
   - title: movies
     permalink: /movies/
+  - title: divider
+  - title: spots
+    permalink: /spots/
 ---

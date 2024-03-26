@@ -13,8 +13,11 @@ If you need help with scaling up your iOS project and you would like a consultat
 I have been working with iOS apps for more than 10 years, and have seen mobile apps at all stages: from startups with small teams, mid-size growing companies to "global scale" apps serving more than a billion users. 
 During this decade spent on mobile development, I have seen different approaches to the most common "apps problems" and learned what works best based on the context and company stage.
 
-<div class="row" style="display: flex; justify-content: center; margin-top: 25px; margin-bottom: 25px;">
+<div class="row" style="display: flex; justify-content: center; margin-top: 25px;">
     {% include figure.liquid loading="eager" path="assets/img/work-references.png" title="References" class="img-fluid rounded z-depth-1" width="200" height="auto" %}
+</div>
+<div class="caption">
+    Some companies I've worked for.
 </div>
 
 I can offer strategical consultancy – for example: how to setup a hiring process to maximize talent reach, how to modularize the codebase to go from 10 modules to 100 – or can help directly with "hands on" tasks, for example in 2024 I was hired for a few days to setup a new project using [Tuist](https://tuist.io/)/[TCA](https://github.com/pointfreeco/swift-composable-architecture).
