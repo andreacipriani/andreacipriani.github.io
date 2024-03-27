@@ -11,4 +11,4 @@ On my ~~blog~~ [notes](/blog), I'll dive into topics related to work (Software E
 Here is what I'm preparing and should be coming next:
 - An analysis of the odds of winning at Blackjack by counting cards using [Montecarlo simulations](https://en.wikipedia.org/wiki/Monte_Carlo_method). Is it really as favourable as the movie "21" make it look?
 - My thoughts on the complete multiverse in "Everything Everywhere All at Once"
-- A reflection on how the pay system in [FAANG](https://www.urbandictionary.com/define.php?term=FAANG) is pure gambling
+- A reflection on how the pay system in [FAANG](https://www.urbandictionary.com/define.php?term=FAANG) is... gambling
