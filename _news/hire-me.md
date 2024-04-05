@@ -37,7 +37,7 @@ I can offer strategic consultancy – for example: how to setup a hiring process
 - And more...
 
 <div class="row" style="display: flex; justify-content: center; margin-top: 25px;">
-    {% include figure.liquid loading="eager" path="assets/img/work-references.png" title="References" class="img-fluid rounded z-depth-1" width="200" height="auto" %}
+    {% include figure.liquid loading="eager" path="assets/img/work-references.png" title="References" class="img-fluid" width="600" height="auto" %}
 </div>
 <div class="caption">
     Some of the companies with apps running my code :)
