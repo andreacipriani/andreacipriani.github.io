@@ -8,7 +8,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>🇮🇹 Software Engineer</p>
+    <p>🇮🇹🇺🇸 Software Engineer</p>
     <p>🍏 iOS expert</p>
     <p>But really: 🎥🤺🎾🛫🌊</p>
     <p><a href="mailto:andreacipriani89@gmail.com">Contact me</a></p>
