@@ -23,7 +23,7 @@ Ciao! I'm Andrea, an Italian Software Engineer based in nyc. I specialize in **m
 
 Throughout my career, I have had the privilege of working for apps used all over the globe, including **Spotify**, **Google** and SoundCloud.
 
-<div class="row" style="display: flex; justify-content: center; margin-top: 25px;">
+<div class="row" style="display: flex; justify-content: center; margin-top: 25px; margin-bottom:5px">
     {% include figure.liquid loading="eager" path="assets/img/work-references.png" title="References" class="img-fluid" width="600" height="auto" %}
 </div>
 
