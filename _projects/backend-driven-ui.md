@@ -15,8 +15,8 @@ Managing the layout of the screen from the backend was an innovative approach th
 
 When building User Interfaces for mobile apps, the process typically involves designing and implementing the UI components directly within the mobile application codebase. The data shown on screen is usually fetched from a backend server or other data sources via API calls. The UI elements are statically pre-built on the app, to be populated with the fetched data. These components are designed and structured to ensure optimal user experience for the type of data the needs to be presented on screen. Additionally, user interactions and navigation are programmed to facilitate transitions between different screens and functionalities within the app.
 
-<div class="row">
-    {% include figure.liquid loading="eager" path="assets/img/bduiclassicui.png" title="Classic UI" class="img-fluid rounded z-depth-1" %}
+<div class="row" style="background-color: white; display: flex; justify-content: center;">
+    {% include figure.liquid loading="eager" path="assets/img/bduiclassicui.png" title="Classic UI" class="img-fluid rounded" %}
 </div>
 <div class="caption">
     A classic approach to show a list of articles on a mobile app UI.
@@ -28,8 +28,8 @@ In a backend driven UI approach, the user interface layout and content presentat
 
 In this example, the backend returns a `type` field that controls the style of the cell used by the app to show its content.
 
-<div class="row">
-    {% include figure.liquid loading="eager" path="assets/img/bduibdui.png" title="Backend Driven UI" class="img-fluid rounded z-depth-1" %}
+<div class="row" style="background-color: white; display: flex; justify-content: center;">
+    {% include figure.liquid loading="eager" path="assets/img/bduibdui.png" title="Backend Driven UI" class="img-fluid rounded" %}
 </div>
 <div class="caption">
     A backend driven approach: the "type" field determines how the app renders the cell.
@@ -41,8 +41,8 @@ Backend Driven UI can be approached in different ways and the key is deciding ho
 
 If traditional mobile UI is the simplest but less flexible approach, the [Hub framework](https://github.com/spotify/HubFramework) developed at Spotify is biased towards customization and, at the end of the spectrum, a web browser gives maximum flexibility for the highest cost.
 
-<div class="row">
-    {% include figure.liquid loading="eager" path="assets/img/bdui-compromise" title="BDUI compromise" class="img-fluid rounded z-depth-1" %}
+<div class="row" style="background-color: white; display: flex; justify-content: center;">
+    {% include figure.liquid loading="eager" path="assets/img/bdui-compromise" title="BDUI compromise" class="img-fluid rounded" %}
 </div>
 <div class="caption">
     The spectrum of Backend Driven UI
