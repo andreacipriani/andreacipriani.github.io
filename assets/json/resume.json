@@ -8,7 +8,7 @@
     "name": "Andrea Cipriani",
     // "role": "Software Engineer",
     "summary": "A Software Engineer specialized in building Mobile applications at scale.",
-    "citizenship": "American, Italian",
+    "citizenship": "USA, Italy",
     "residence": "New York",
     "profiles": [
       {
@@ -136,11 +136,11 @@
       "highlights": ["SwiftUI", "AppKit"],
       "startDate": "2023",
       "endDate": "2024",
-      "url": "https://www.todoapp.today"
+      "url": "https://sphere-arrest-659920.framer.app/"
     },
     {
       "name": "Veer",
-      "summary": "An app to quickly interact with your favourite contacts.",
+      "summary": "An app to quickly interact with your favorite contacts.",
       "highlights": ["iOS app", "Android app", "In-app purchases"],
       "startDate": "2015",
       "endDate": "2016",

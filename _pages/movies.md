@@ -1,7 +1,7 @@
 ---
 layout: movies
 permalink: /movies/
-title: My favourite movies
+title: My favorite movies
 description: (Not in any specific order)
 nav: false
 ---
