@@ -272,6 +272,13 @@
 
             <div class="subtitle" id="lossReason" style="margin-top: 2rem; opacity: 0.9;"></div>
 
+            <button onclick="shareResults()">Share Results</button>
+            <button onclick="resetGame()">Play Again</button>
+            <div class="subtitle" id="shareConfirm" style="margin-top: 1rem; opacity: 0; transition: opacity 0.3s;">Copied to clipboard!</div>
+
+            <div style="margin: 3rem auto 1rem; font-size: 1rem; opacity: 0.9; letter-spacing: 0.2rem;">Your Words</div>
+            <div class="word-list" id="wordList"></div>
+
             <div style="margin: 3rem auto; padding: 2rem; border: 1px solid rgba(255,255,255,0.3); max-width: 500px; line-height: 1.8; font-size: 0.9rem; opacity: 0.8;">
                 Now imagine this game, but each turn is 24 hours.<br>
                 If you make a mistake, you die.<br><br>
@@ -279,12 +286,6 @@
                 Days? Years? Centuries? Millennia?<br><br>
                 Is there even a limit?
             </div>
-
-            <div class="word-list" id="wordList"></div>
-
-            <button onclick="shareResults()">Share Results</button>
-            <button onclick="resetGame()">Play Again</button>
-            <div class="subtitle" id="shareConfirm" style="margin-top: 1rem; opacity: 0; transition: opacity 0.3s;">Copied to clipboard!</div>
         </div>
     </div>
 
@@ -501,18 +502,51 @@
 
             shareText += `\nPlay at: https://andreacipriani.github.io/parole/`;
 
-            // Copy to clipboard
-            navigator.clipboard.writeText(shareText).then(() => {
-                // Show confirmation
-                const confirmEl = document.getElementById('shareConfirm');
-                confirmEl.style.opacity = '1';
-                setTimeout(() => {
-                    confirmEl.style.opacity = '0';
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-                alert('Failed to copy to clipboard');
-            });
+            // Try modern clipboard API first
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(shareText).then(() => {
+                    showShareConfirmation();
+                }).catch(err => {
+                    console.error('Clipboard API failed:', err);
+                    fallbackCopyToClipboard(shareText);
+                });
+            } else {
+                // Fallback for older browsers or non-HTTPS contexts
+                fallbackCopyToClipboard(shareText);
+            }
+        }
+
+        function fallbackCopyToClipboard(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            textArea.style.top = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showShareConfirmation();
+                } else {
+                    alert('Failed to copy to clipboard. Please try again.');
+                }
+            } catch (err) {
+                console.error('Fallback copy failed:', err);
+                alert('Failed to copy to clipboard. Please copy the text manually.');
+            }
+
+            document.body.removeChild(textArea);
+        }
+
+        function showShareConfirmation() {
+            const confirmEl = document.getElementById('shareConfirm');
+            confirmEl.style.opacity = '1';
+            setTimeout(() => {
+                confirmEl.style.opacity = '0';
+            }, 2000);
         }
 
         function resetGame() {
