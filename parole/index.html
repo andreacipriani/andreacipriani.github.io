@@ -256,7 +256,7 @@
             </div>
 
             <div class="stats">
-                <div>Unique entries: <span id="wordCount">0</span></div>
+                <div>Score: <span id="wordCount">0</span></div>
             </div>
         </div>
 
@@ -266,7 +266,9 @@
             <div class="subtitle" id="endPlayerName"></div>
 
             <div class="word-count" id="finalCount">0</div>
-            <div class="subtitle">unique entries</div>
+            <div class="subtitle">score</div>
+
+            <div class="subtitle" id="lossReason" style="margin-top: 2rem; opacity: 0.9;"></div>
 
             <div class="word-list" id="wordList"></div>
 
@@ -383,13 +385,13 @@
 
             // Check for numbers - GAME OVER if violated
             if (/\d/.test(word)) {
-                gameOver();
+                gameOver(word, 'Contains numbers');
                 return;
             }
 
             // Check for spaces - GAME OVER if violated
             if (/\s/.test(word)) {
-                gameOver();
+                gameOver(word, 'Contains spaces');
                 return;
             }
 
@@ -397,14 +399,14 @@
             const wordLower = word.toLowerCase();
             for (let i = 0; i < wordLower.length - 1; i++) {
                 if (wordLower[i] === wordLower[i + 1]) {
-                    gameOver();
+                    gameOver(word, `Consecutive repeated character: "${wordLower[i]}"`);
                     return;
                 }
             }
 
             // Check for duplicate (case-insensitive) - GAME OVER if violated
             if (usedWords.has(wordLower)) {
-                gameOver();
+                gameOver(word, 'Already used this word');
                 return;
             }
 
@@ -431,12 +433,20 @@
             document.getElementById('wordCount').textContent = usedWords.size;
         }
 
-        function gameOver(duplicateWord) {
+        function gameOver(word = '', reason = 'Time ran out') {
             clearInterval(timerInterval);
 
             // Prepare end screen
             document.getElementById('endPlayerName').textContent = playerName;
             document.getElementById('finalCount').textContent = usedWords.size;
+
+            // Display loss reason
+            const lossReasonEl = document.getElementById('lossReason');
+            if (word) {
+                lossReasonEl.textContent = `Lost on: "${word}" - ${reason}`;
+            } else {
+                lossReasonEl.textContent = reason;
+            }
 
             // Display word list
             const wordListEl = document.getElementById('wordList');
