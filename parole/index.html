@@ -231,7 +231,7 @@
                     <li>Never repeat the same string twice</li>
                     <li>No numbers allowed</li>
                     <li>No spaces allowed</li>
-                    <li>No repeated characters within a string</li>
+                    <li>No consecutive repeated characters</li>
                     <li>That's it. How long can you last?</li>
                 </ol>
             </div>
@@ -381,32 +381,30 @@
                 return;
             }
 
-            // Check for numbers
+            // Check for numbers - GAME OVER if violated
             if (/\d/.test(word)) {
-                showError('No numbers allowed!');
+                gameOver();
                 return;
             }
 
-            // Check for spaces
+            // Check for spaces - GAME OVER if violated
             if (/\s/.test(word)) {
-                showError('No spaces allowed!');
+                gameOver();
                 return;
             }
 
-            // Check for repeated characters
+            // Check for consecutive repeated characters - GAME OVER if violated
             const wordLower = word.toLowerCase();
-            const charSet = new Set();
-            for (let char of wordLower) {
-                if (charSet.has(char)) {
-                    showError('No repeated characters allowed!');
+            for (let i = 0; i < wordLower.length - 1; i++) {
+                if (wordLower[i] === wordLower[i + 1]) {
+                    gameOver();
                     return;
                 }
-                charSet.add(char);
             }
 
-            // Check for duplicate (case-insensitive)
+            // Check for duplicate (case-insensitive) - GAME OVER if violated
             if (usedWords.has(wordLower)) {
-                gameOver(word);
+                gameOver();
                 return;
             }
 
