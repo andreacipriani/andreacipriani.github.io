@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parole</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            padding: 2rem;
+        }
+
+        .screen {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.7;
+            letter-spacing: 0.2rem;
+        }
+
+        .rules {
+            text-align: left;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid #fff;
+            max-width: 500px;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .rules li {
+            margin-bottom: 1rem;
+            list-style-position: inside;
+        }
+
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 1.5rem;
+            padding: 1rem;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-bottom-color: #fff;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            font-size: 1.2rem;
+            padding: 1rem 3rem;
+            margin-top: 2rem;
+            cursor: pointer;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .timer {
+            font-size: 6rem;
+            font-weight: 300;
+            margin: 2rem 0;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.3rem;
+        }
+
+        .timer.warning {
+            color: #fff;
+            animation: pulse 0.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .game-input {
+            margin: 2rem 0;
+        }
+
+        .stats {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .word-count {
+            font-size: 5rem;
+            margin: 2rem 0;
+            font-weight: 300;
+        }
+
+        .word-list {
+            margin-top: 2rem;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #fff;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .word-list::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .word-list::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        .word-list::-webkit-scrollbar-thumb {
+            background: #fff;
+        }
+
+        .word-item {
+            padding: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.7;
+        }
+
+        .word-item:last-child {
+            border-bottom: none;
+        }
+
+        .error-message {
+            color: #fff;
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .error-message.show {
+            opacity: 1;
+        }
+
+        .config-info {
+            margin-top: 1rem;
+            opacity: 0.5;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 0.3rem;
+            }
+
+            .timer {
+                font-size: 4rem;
+            }
+
+            .word-count {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <h1>Parole</h1>
+            <div class="subtitle">A game of words against time</div>
+
+            <div class="rules">
+                <ol>
+                    <li>Write something in the text box before time runs out</li>
+                    <li>The timer restarts after each submission</li>
+                    <li>Never repeat the same string twice</li>
+                    <li>No numbers allowed</li>
+                    <li>No spaces allowed</li>
+                    <li>No repeated characters within a string</li>
+                    <li>That's it. How long can you last?</li>
+                </ol>
+            </div>
+
+            <input type="text" id="nameInput" placeholder="Enter your name" maxlength="30">
+            <div class="error-message" id="nameError">Please enter your name</div>
+            <button onclick="startGame()">Start Playing</button>
+
+            <div class="config-info" id="configInfo">Timer: 10 seconds</div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <h1>Parole</h1>
+            <div class="subtitle" id="playerName"></div>
+
+            <div class="timer" id="timer">10</div>
+
+            <div class="game-input">
+                <input type="text" id="wordInput" placeholder="Type anything..." autocomplete="off">
+                <div class="error-message" id="gameError"></div>
+            </div>
+
+            <div class="stats">
+                <div>Unique entries: <span id="wordCount">0</span></div>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="endScreen" class="screen">
+            <h1>Game Over</h1>
+            <div class="subtitle" id="endPlayerName"></div>
+
+            <div class="word-count" id="finalCount">0</div>
+            <div class="subtitle">unique entries</div>
+
+            <div class="word-list" id="wordList"></div>
+
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+        // Game state
+        let playerName = '';
+        let usedWords = new Set();
+        let timerInterval = null;
+        let timeLeft = 10;
+        let timerDuration = 10; // Default 10 seconds
+        let wordInput = null;
+
+        // Read timer duration from URL parameter
+        function getTimerFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const timer = urlParams.get('timer') || urlParams.get('t');
+            if (timer) {
+                const parsed = parseInt(timer);
+                if (!isNaN(parsed) && parsed > 0 && parsed <= 300) {
+                    return parsed;
+                }
+            }
+            return 10; // Default
+        }
+
+        // Initialize
+        window.onload = function() {
+            timerDuration = getTimerFromURL();
+            timeLeft = timerDuration;
+            document.getElementById('configInfo').textContent = `Timer: ${timerDuration} seconds`;
+
+            // Setup enter key for name input
+            document.getElementById('nameInput').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    startGame();
+                }
+            });
+
+            // Setup enter key for word input
+            wordInput = document.getElementById('wordInput');
+            wordInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    submitWord();
+                }
+            });
+        };
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function startGame() {
+            const nameInput = document.getElementById('nameInput');
+            const name = nameInput.value.trim();
+
+            if (!name) {
+                const errorEl = document.getElementById('nameError');
+                errorEl.classList.add('show');
+                setTimeout(() => errorEl.classList.remove('show'), 2000);
+                return;
+            }
+
+            playerName = name;
+            usedWords.clear();
+
+            document.getElementById('playerName').textContent = playerName;
+            showScreen('gameScreen');
+
+            // Focus on input and start timer
+            wordInput.focus();
+            startTimer();
+        }
+
+        function startTimer() {
+            timeLeft = timerDuration;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+
+                if (timeLeft <= 0) {
+                    gameOver();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const timerEl = document.getElementById('timer');
+            timerEl.textContent = timeLeft;
+
+            if (timeLeft <= 3) {
+                timerEl.classList.add('warning');
+            } else {
+                timerEl.classList.remove('warning');
+            }
+        }
+
+        function submitWord() {
+            const word = wordInput.value.trim();
+            const errorEl = document.getElementById('gameError');
+
+            if (!word) {
+                showError('Please enter something!');
+                return;
+            }
+
+            // Check for numbers
+            if (/\d/.test(word)) {
+                showError('No numbers allowed!');
+                return;
+            }
+
+            // Check for spaces
+            if (/\s/.test(word)) {
+                showError('No spaces allowed!');
+                return;
+            }
+
+            // Check for repeated characters
+            const wordLower = word.toLowerCase();
+            const charSet = new Set();
+            for (let char of wordLower) {
+                if (charSet.has(char)) {
+                    showError('No repeated characters allowed!');
+                    return;
+                }
+                charSet.add(char);
+            }
+
+            // Check for duplicate (case-insensitive)
+            if (usedWords.has(wordLower)) {
+                gameOver(word);
+                return;
+            }
+
+            // Add word and reset
+            usedWords.add(wordLower);
+            wordInput.value = '';
+            updateWordCount();
+
+            // Reset timer
+            clearInterval(timerInterval);
+            startTimer();
+        }
+
+        function showError(message) {
+            const errorEl = document.getElementById('gameError');
+            errorEl.textContent = message;
+            errorEl.classList.add('show');
+            setTimeout(() => {
+                errorEl.classList.remove('show');
+            }, 2000);
+        }
+
+        function updateWordCount() {
+            document.getElementById('wordCount').textContent = usedWords.size;
+        }
+
+        function gameOver(duplicateWord) {
+            clearInterval(timerInterval);
+
+            // Prepare end screen
+            document.getElementById('endPlayerName').textContent = playerName;
+            document.getElementById('finalCount').textContent = usedWords.size;
+
+            // Display word list
+            const wordListEl = document.getElementById('wordList');
+            wordListEl.innerHTML = '';
+
+            const wordsArray = Array.from(usedWords);
+            wordsArray.forEach((word, index) => {
+                const wordItem = document.createElement('div');
+                wordItem.className = 'word-item';
+                wordItem.textContent = `${index + 1}. ${word}`;
+                wordListEl.appendChild(wordItem);
+            });
+
+            showScreen('endScreen');
+        }
+
+        function resetGame() {
+            usedWords.clear();
+            wordInput.value = '';
+            document.getElementById('nameInput').value = '';
+            document.getElementById('wordCount').textContent = '0';
+            showScreen('startScreen');
+        }
+    </script>
+</body>
+</html>
