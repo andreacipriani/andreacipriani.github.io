@@ -272,7 +272,9 @@
 
             <div class="word-list" id="wordList"></div>
 
+            <button onclick="shareResults()">Share Results</button>
             <button onclick="resetGame()">Play Again</button>
+            <div class="subtitle" id="shareConfirm" style="margin-top: 1rem; opacity: 0; transition: opacity 0.3s;">Copied to clipboard!</div>
         </div>
     </div>
 
@@ -284,6 +286,8 @@
         let timeLeft = 10;
         let timerDuration = 10; // Default 10 seconds
         let wordInput = null;
+        let lossWord = '';
+        let lossReason = '';
 
         // Read timer duration from URL parameter
         function getTimerFromURL() {
@@ -436,6 +440,10 @@
         function gameOver(word = '', reason = 'Time ran out') {
             clearInterval(timerInterval);
 
+            // Store loss information for sharing
+            lossWord = word;
+            lossReason = reason;
+
             // Prepare end screen
             document.getElementById('endPlayerName').textContent = playerName;
             document.getElementById('finalCount').textContent = usedWords.size;
@@ -463,11 +471,48 @@
             showScreen('endScreen');
         }
 
+        function shareResults() {
+            // Build share text
+            let shareText = `Parole - Game Results\n\n`;
+            shareText += `Player: ${playerName}\n`;
+            shareText += `Score: ${usedWords.size}\n`;
+
+            if (lossWord) {
+                shareText += `Lost on: "${lossWord}" - ${lossReason}\n`;
+            } else {
+                shareText += `Lost: ${lossReason}\n`;
+            }
+
+            shareText += `\nWord History:\n`;
+            const wordsArray = Array.from(usedWords);
+            wordsArray.forEach((word, index) => {
+                shareText += `${index + 1}. ${word}\n`;
+            });
+
+            shareText += `\nPlay at: https://andreacipriani.github.io/parole/`;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(shareText).then(() => {
+                // Show confirmation
+                const confirmEl = document.getElementById('shareConfirm');
+                confirmEl.style.opacity = '1';
+                setTimeout(() => {
+                    confirmEl.style.opacity = '0';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy to clipboard');
+            });
+        }
+
         function resetGame() {
             usedWords.clear();
             wordInput.value = '';
             document.getElementById('nameInput').value = '';
             document.getElementById('wordCount').textContent = '0';
+            document.getElementById('shareConfirm').style.opacity = '0';
+            lossWord = '';
+            lossReason = '';
             showScreen('startScreen');
         }
     </script>
