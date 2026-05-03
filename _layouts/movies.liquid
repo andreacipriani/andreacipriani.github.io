@@ -9,11 +9,11 @@ layout: default
   </header>
     <div class="movies-grid">
         {% for movie in site.data.movies.favorites %}
-        <div class="movie-item">
-            <a href="{{ movie.imdb_link }} target="_blank">
-            <img src="{{ movie.image }} alt="Image 2">
-            </a>
-            <p onclick="window.open('{{ movie.imdb_link }}', '_blank')">{{ movie.title }}</p>
+        <div class="movie-item" onclick="window.open('{{ movie.imdb_link }}', '_blank')">
+            <img src="{{ movie.image }}" alt="{{ movie.title }}">
+            <div class="movie-overlay">
+                <p>{{ movie.title }}</p>
+            </div>
         </div>
         {% endfor %}
     </div>

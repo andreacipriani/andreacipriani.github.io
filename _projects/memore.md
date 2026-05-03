@@ -5,6 +5,7 @@ description: Memore. Me, more.
 img: assets/img/memore.png
 importance: 3
 category: side-projects
+tags: [iOS, SwiftUI, AI]
 giscus_comments: true
 ---
 
@@ -16,15 +17,12 @@ One of the ideas I have been thinking about for a long time is _Memore_: a produ
     </div>
 </div>
 <div class="caption">
-    This project is a work in progress started in 2023 and is not available yet.
+    Work in progress — not available yet.
 </div>
 
 #### Self improvement
 
-When it comes to self-improvement, there's a whole world out there buzzing with startups, products, podcasts, and books, each offering its own unique take on the journey to becoming our best selves.
-For example, forming strong _habits_ has been a big trend in the latest years. Look at the success of books like "Atomic Habits" - it's been flying off the shelves and even spawned its own [iOS app](https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906).
-Also, tech support for Health and Fitness is constantly evolving and had its highest peak during the pandemic. From roughly a million of people cycling at home on their Peloton, to folks like [Bryan Johnson](https://en.wikipedia.org/wiki/Bryan_Johnson) pushing the limits by tracking every conceivable health parameter to keep their biological age as low as possible.
-Lastly, the boom of genAI has brought life coaching and therapy among the most common examples where LLMs could do a great job into guiding us to do the right things.
+Self-improvement is a crowded space — habits apps, health wearables, AI coaching. Yet most tools only scratch the surface: fitness data is easy to collect, but the metrics that actually matter (mood, energy, focus, life satisfaction) still require manual effort and rarely get tracked consistently.
 
 Despite all of this, I think that we are still missing the opportunity of collecting the most important data, the data about ourselves and our life. While wearables started collecting some of it, mostly related to fitness and health, and [whoop](https://www.whoop.com/) brought data analysis and coaching to the next level, there is still plenty of important metrics that we are missing, some of which require manual data entry and are hard to track.
 

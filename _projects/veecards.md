@@ -5,6 +5,7 @@ description: Bring your contacts to life.
 img: assets/img/veecards.png
 importance: 1
 category: work
+tags: [iOS, Android, Backend]
 giscus_comments: false
 ---
 

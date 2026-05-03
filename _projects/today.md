@@ -5,6 +5,7 @@ description: Plan today, prepare tomorrow.
 img: assets/img/today.png
 importance: 1
 category: side-projects
+tags: [SwiftUI, AppKit, macOS]
 giscus_comments: true
 ---
 

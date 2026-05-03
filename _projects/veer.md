@@ -5,6 +5,7 @@ description: Veer your life towards comfort.
 img: assets/img/veer.png
 importance: 2
 category: work
+tags: [iOS, Android]
 giscus_comments: false
 ---
 

@@ -20,16 +20,24 @@
   },
   "work": [
     {
+      "name": "Apple",
+      "position": "Software Engineer",
+      "startDate": "2024",
+      "endDate": "2026",
+      "summary": "Working on Sports and AI tooling at Apple.",
+      "highlights": ["SwiftUI", "Claude Code"]
+    },
+    {
       "name": "Google",
       "position": "Software Engineer, Tech Lead",
       "startDate": "2023",
-      "endDate": "",
+      "endDate": "2024",
       "summary": "Tech lead of a team building an Ambient Computing mobile platform, including a Google Play Services API, to run multi-device experiences powered by the surrounding user's context.",
       "highlights": ["Kotlin", "Android", "Google Play Services", "Ambient Computing"]
     },
     {
       "name": "Spotify",
-      "position": "Senior Software Engineer",
+      "position": "Software Engineer",
       "startDate": "2020",
       "endDate": "2023",
       "summary": "I led the creation of a multi-platform dependency injection framework, standardized mobile microservices, and optimized iOS app startup, while also implementing modularization efforts and infrastructure for demo apps using the Bazel build system.",

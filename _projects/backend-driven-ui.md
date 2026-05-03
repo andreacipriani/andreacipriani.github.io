@@ -5,6 +5,7 @@ description: A hybrid approach@SoundCloud
 img: assets/img/bdui-cover.png
 importance: 1
 category: work
+tags: [iOS, Swift, Architecture]
 giscus_comments: true
 ---
 

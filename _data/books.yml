@@ -1,0 +1,33 @@
+favorites:
+  - title: "In Search of Lost Time"
+    author: Marcel Proust
+    cover: https://covers.openlibrary.org/b/isbn/9780300185430-L.jpg
+    goodreads: https://www.goodreads.com/book/show/18796.In_Search_of_Lost_Time
+  - title: "Infinite Jest"
+    author: David Foster Wallace
+    cover: https://covers.openlibrary.org/b/isbn/9780316066525-L.jpg
+    goodreads: https://www.goodreads.com/book/show/6759.Infinite_Jest
+  - title: "The Way of Zen"
+    author: Alan Watts
+    cover: https://covers.openlibrary.org/b/isbn/9780375705106-L.jpg
+    goodreads: https://www.goodreads.com/book/show/514210.The_Way_of_Zen
+  - title: "If on a Winter's Night a Traveler"
+    author: Italo Calvino
+    cover: https://covers.openlibrary.org/b/isbn/9780156439619-L.jpg
+    goodreads: https://www.goodreads.com/book/show/374233.If_on_a_Winter_s_Night_a_Traveler
+  - title: "Fight Club"
+    author: Chuck Palahniuk
+    cover: https://covers.openlibrary.org/b/isbn/9780393039764-L.jpg
+    goodreads: https://www.goodreads.com/book/show/36236124-fight-club
+  - title: "The Stranger"
+    author: Albert Camus
+    cover: https://covers.openlibrary.org/b/isbn/9780679720201-L.jpg
+    goodreads: https://www.goodreads.com/book/show/49552.The_Stranger
+  - title: "The Case Against Reality"
+    author: Donald Hoffman
+    cover: https://covers.openlibrary.org/b/isbn/9780393357790-L.jpg
+    goodreads: https://www.goodreads.com/book/show/41817484-the-case-against-reality
+  - title: "Les Fleurs du Mal"
+    author: Charles Baudelaire
+    cover: https://covers.openlibrary.org/b/isbn/9780199535651-L.jpg
+    goodreads: https://www.goodreads.com/book/show/41013.Les_Fleurs_du_Mal

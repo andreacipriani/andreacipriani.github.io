@@ -39,13 +39,13 @@ favorites:
     image: https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt1798709/
   - title: Loro
-    image: https://m.media-amazon.com/images/M/MV5BNDJhZGZhN2QtNWE3My00NTE2LWE4ZmItODU1YmU5OWRhOTEwXkEyXkFqcGdeQXVyODY3Nzc0OTk@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/yAogxeovs5HpzhD4UbrDsSybtp7.jpg
     imdb_link: https://www.imdb.com/title/tt10182822/?ref_=rt_li_i
   - title: Adaptation
     image: https://m.media-amazon.com/images/M/MV5BN2JjNzVhOTMtNTc3Yi00NGNjLWI3YjgtYjkyZTYzY2FmMmIxXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt0268126/?ref_=rt_li_i
   - title: The dreamers
-    image: https://m.media-amazon.com/images/M/MV5BN2JlNDM0YjQtNjg3NC00MWY0LTk0MmMtMTVkMmU0MDQ4MGMzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/gBb7GGaFYPu7nEUYvC8G4LaJJN1.jpg
     imdb_link: https://www.imdb.com/title/tt0309987/
   - title: Moonrise Kingdom
     image: https://m.media-amazon.com/images/M/MV5BMTEwMTc3NDkzOTJeQTJeQWpwZ15BbWU3MDI4NTAwNzc@._V1_UY209_CR0,0,140,209_AL_.jpg
@@ -60,16 +60,16 @@ favorites:
     image: https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt0105236
   - title: Vicky Cristina Barcelona
-    image: https://m.media-amazon.com/images/M/MV5BNjVkZGE1OWItYjMzNC00ZTcwLThiODAtYmYwNzJkMjk5OTVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/ekAIg0GSbbHTH7y1GPgWj0brLTW.jpg
     imdb_link: https://www.imdb.com/title/tt0497465
   - title: Poor Things
-    image: https://m.media-amazon.com/images/M/MV5BNGIyYWMzNjktNDE3MC00YWQyLWEyMmEtN2ZmNzZhZDk3NGJlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg
     imdb_link: https://www.imdb.com/title/tt14230458/
   - title: My Octopus Teacher
-    image: https://m.media-amazon.com/images/M/MV5BODFkYThkMGItYzczYS00NmU2LWFiZjctNmFmZWNiM2NkM2M1XkEyXkFqcGdeQXVyMTU3NDU4MDg2._V1_UY209_CR3,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/hvTVZb7hBC8tZAGoEhH5eiMJu2B.jpg
     imdb_link: https://www.imdb.com/title/tt12888462
   - title: Black Mirror
-    image: https://m.media-amazon.com/images/M/MV5BZTgyNTBkNzctN2I3NC00NTA1LWJiMDMtYzA2MmYyZjc1NWQzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_UY209_CR13,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg
     imdb_link: https://www.imdb.com/title/tt2085059/?ref_=rt_li_i
   - title: Annie Hall
     image: https://m.media-amazon.com/images/M/MV5BZDg1OGQ4YzgtM2Y2NS00NjA3LWFjYTctMDRlMDI3NWE1OTUyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg
@@ -78,10 +78,10 @@ favorites:
     image: https://m.media-amazon.com/images/M/MV5BMTc0ODk5MzEyMV5BMl5BanBnXkFtZTcwMzI0MDY1OQ@@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt2334873/?ref_=rt_li_i
   - title: Okja
-    image: https://m.media-amazon.com/images/M/MV5BMjQxMTcxNDgxN15BMl5BanBnXkFtZTgwOTczNTIzMjI@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/pHlRr2MfjK77VIIAO7p0R4jhsJI.jpg
     imdb_link: https://www.imdb.com/title/tt3967856/?ref_=rt_li_i
   - title: Love
-    image: https://m.media-amazon.com/images/M/MV5BZGQxZTFlZDctZjcyMy00NzA1LWFkMDYtNzRmZTkwYTFhYTc3XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/yz6lmOmsmYuj6AOLG4LIwK5eJZF.jpg
     imdb_link: https://www.imdb.com/title/tt3774694/?ref_=rt_li_i
   - title: The Disaster Artist
     image: https://m.media-amazon.com/images/M/MV5BOGNkMzliMGMtMDI5Ni00OTZkLTgyMTYtNzk5ZTY1NjVhYjVmXkEyXkFqcGdeQXVyNTAzMTY4MDA@._V1_UY209_CR0,0,140,209_AL_.jpg
@@ -105,13 +105,10 @@ favorites:
     image: https://m.media-amazon.com/images/M/MV5BODAzNDMxMzAxOV5BMl5BanBnXkFtZTgwMDMxMjA4MjE@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt2562232/?ref_=rt_li_i
   - title: Almost Famous
-    image: https://m.media-amazon.com/images/M/MV5BYmZjZDUxYjgtZDY4Yi00MTY1LWE3ZTctOTIyNDA3ZGY5ZDZjXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg
     imdb_link: https://www.imdb.com/title/tt0181875/?ref_=rt_li_i
-  - title: Triangle of Sadness
-    image: https://m.media-amazon.com/images/M/MV5BNDRiZjc0ZDMtMjhlYi00ZjAzLTg0MDQtZDI2NGEyYTBlN2M2XkEyXkFqcGdeQXVyMTA2MDU0NjM5._V1_UY209_CR0,0,140,209_AL_.jpg
-    imdb_link: https://www.imdb.com/title/tt7322224/?ref_=rt_li_i
   - title: American Beauty
-    image: https://m.media-amazon.com/images/M/MV5BNTBmZWJkNjctNDhiNC00MGE2LWEwOTctZTk5OGVhMWMyNmVhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg
+    image: https://image.tmdb.org/t/p/w200/wby9315QzVKdW9BonAefg8jGTTb.jpg
     imdb_link: https://www.imdb.com/title/tt0169547/?ref_=rt_li_i
   - title: Jamón Jamón
     image: https://m.media-amazon.com/images/M/MV5BODY0N2EzNzktZWI0MC00ZjA5LTlhMDgtZjc5YzM4NDlkOTQ5XkEyXkFqcGdeQXVyMTA0MjU0Ng@@._V1_UY209_CR5,0,140,209_AL_.jpg
@@ -119,4 +116,7 @@ favorites:
   - title: Kynodontas
     image: https://m.media-amazon.com/images/M/MV5BMjIyOTkyMDE5N15BMl5BanBnXkFtZTcwNjIwNzQwMw@@._V1_UY209_CR4,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt1379182/?ref_=rt_li_i
+  - title: Triangle of Sadness
+    image: https://image.tmdb.org/t/p/w200/k9eLozCgCed5FGTSdHu0bBElAV8.jpg
+    imdb_link: https://www.imdb.com/title/tt7322224/?ref_=rt_li_i
      

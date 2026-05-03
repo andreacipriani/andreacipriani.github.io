@@ -50,4 +50,54 @@ body.sticky-bottom-footer {
 * Projects
 *****************************************************************************/
 
-// TODO: redefine projects layout.
+// Projects grid: override masonry with CSS flexbox for multi-column layout
+.projects .grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: auto !important;
+
+  .grid-sizer {
+    display: none !important;
+  }
+
+  .grid-item {
+    flex: 0 0 calc(33.33% - 10px) !important;
+    width: auto !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    .grid-item {
+      flex: 0 0 calc(50% - 8px) !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-item {
+      flex: 0 0 100% !important;
+    }
+  }
+}
+
+// Project tag pills
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: var(--global-theme-color);
+  color: #fff;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+}
