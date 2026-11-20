@@ -19,9 +19,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Ciao! I'm Andrea. I grew up in Italy, live in New York, and build iOS apps for a living, currently at Airbnb. I specialize in **mobile development** at scale, with over a decade of experience.
+Ciao! I'm Andrea. I grew up in Italy, live in New York, and build iOS apps for a living, currently at Airbnb. I specialize in mobile development at scale, with over a decade of experience.
 
-Throughout my career, I have had the privilege of working for apps used all over the globe, including **Airbnb**, **Apple Sports**, **Spotify**, **SoundCloud** and **Google**.
+Throughout my career, I have had the privilege of working for apps used all over the globe, including Airbnb, Apple Sports, Spotify, SoundCloud and Google.
 
 <div class="company-logos" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; margin-top: 25px; margin-bottom: 28px; font-size: 2.2rem; color: var(--global-text-color);">
   <span title="Airbnb"><i class="fa-brands fa-airbnb"></i></span>
