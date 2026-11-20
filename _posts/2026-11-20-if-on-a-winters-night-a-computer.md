@@ -4,18 +4,17 @@ title: If on a winter's night a computer
 date: 2026-11-20 10:00:00
 description: A Turing test in which, this time, the human is the one being tested.
 giscus_comments: false
-lang_link: /blog/2026/se-una-notte-d-inverno-un-calcolatore/
-lang_label: "🇮🇹 Leggi in italiano"
 _styles: >
   .post-content h3.ch-num { text-align: center; font-size: 1.1rem; letter-spacing: 0.3em; margin: 2rem 0 0.8rem; color: var(--global-text-color-light); }
-  .post-content > h3.ch-num:first-child { margin-top: 0.5rem; }
+  .post-content > h3.ch-num:first-child, .post-content p.translation-note + h3.ch-num { margin-top: 1rem; }
   .post-content p.captcha { display: inline-flex; align-items: center; gap: 0.7rem; padding: 0.75rem 1.1rem; border: 1px solid var(--global-divider-color); border-radius: 6px; font-size: 0.95rem; }
   .post-content p.captcha::before { content: ""; width: 1.1rem; height: 1.1rem; border: 2px solid var(--global-text-color-light); border-radius: 3px; flex: none; }
   .post-content p.answer { font-size: 1.15rem; font-style: italic; margin-left: 1.5rem; }
+  .post-content p.translation-note { font-size: 0.9rem; font-style: italic; color: var(--global-text-color-light); margin: 0 0 0.5rem; }
   .post-content img { max-width: 100%; height: auto; margin: 0.5rem 0 1.5rem; border-radius: 6px; }
 ---
 
-
+<p class="translation-note">This piece was written in Italian and translated into English automatically. <a href="/blog/2026/se-una-notte-d-inverno-un-calcolatore/">🇮🇹 Read the original</a>.</p>
 
 <h3 class="ch-num">1</h3>
 
