@@ -21,7 +21,9 @@ layout: default
       {{ page.date | date: '%B %d, %Y' }}
       {% if page.author %}• {{ page.author }}{% endif %}
       {% if page.meta %}• {{ page.meta }}{% endif %}
+      {% if page.lang_link %}&nbsp;·&nbsp; <a href="{{ page.lang_link | relative_url }}">{{ page.lang_label }}</a>{% endif %}
     </p>
+    {% if tags != '' or categories != '' %}
     <p class="post-tags">
       {% if url_beginning == '/blog/' %}
         <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}"> <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
@@ -54,6 +56,7 @@ layout: default
         {% endfor %}
       {% endif %}
     </p>
+    {% endif %}
   </header>
 
   <article class="post-content">
