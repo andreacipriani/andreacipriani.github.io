@@ -6,31 +6,66 @@
 <title>ONENESS — a ladder of abstraction</title>
 <meta name="description" content="From Oneness, downward: a vast tree of a thousand words that splits from unity into dichotomy, language, and the whole named world. Drag, scroll, pinch to roam — climb up to reach the One.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+        // Follow the theme chosen on the rest of andreacipriani.github.io (same localStorage key), else the system setting.
+        (function () {
+            var t = null;
+            try { t = localStorage.getItem('theme'); } catch (e) {}
+            if (t !== 'dark' && t !== 'light') {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.documentElement.setAttribute('data-theme', t);
+        })();
+        function toggleSiteTheme() {
+            var t = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', t);
+            try { localStorage.setItem('theme', t); } catch (e) {}
+        }
+    </script>
 <style>
+  /* light (default, matches andreacipriani.github.io) */
   :root{
-    --void:#050507; --bone:#f4f1e8; --dim:#3a3a46;
+    --void:#ffffff; --bone:#1c1c1d; --dim:#d4d4da; --ink:#000000;
+    --c-root:#111111;
+    --c-1:#d6145a; --c-2:#0d936a; --c-3:#a87e00; --c-4:#2f5fd6; --c-5:#d0500c;
+    --c-6:#0a8aa8; --c-7:#8a3fd6; --c-8:#cf3554; --c-9:#3f8f12; --c-10:#bf7400;
+    --c-concept:#b509ac;
+    --grid:rgba(0,0,0,.07); --vignette:rgba(255,255,255,.85); --scan-opacity:0;
+    --intro-a:#ffffff; --intro-b:#f3f3f6;
+    --spine-glow:none; --root-glow:0 0 0 transparent; --spine-text-glow:0 0 0 transparent;
+    --glow-a:#d6145a33; --glow-b:#2f5fd633; --kick-glow:0 0 0 transparent;
+  }
+  /* dark: the original look */
+  html[data-theme="dark"]{
+    --void:#050507; --bone:#f4f1e8; --dim:#3a3a46; --ink:#ffffff;
     --c-root:#ffffff;
     --c-1:#ff1f6b; --c-2:#25ffb0; --c-3:#ffd200; --c-4:#3d7bff; --c-5:#ff6a1a;
     --c-6:#16e0ff; --c-7:#b061ff; --c-8:#ff4d6d; --c-9:#7cff3d; --c-10:#ff9e00;
     --c-concept:#c9b6ff;
+    --grid:rgba(255,255,255,.05); --vignette:rgba(0,0,0,.84); --scan-opacity:.5;
+    --intro-a:#0c0c14; --intro-b:#050507;
+    --spine-glow:drop-shadow(0 0 6px rgba(244,241,232,.5));
+    --root-glow:0 0 34px #ffffff66; --spine-text-glow:0 0 22px #ffffff55, 0 0 7px #ffffff88;
+    --glow-a:#ff1f6b88; --glow-b:#3d7bff88; --kick-glow:0 0 40px rgba(255,255,255,.25);
   }
+  html,body{transition:background .4s ease, color .4s ease}
   *{box-sizing:border-box; margin:0; padding:0}
   html,body{height:100%; overflow:hidden; background:var(--void); color:var(--bone);
     font-family:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
     -webkit-font-smoothing:antialiased; overscroll-behavior:none;}
   #field{position:fixed; inset:0; cursor:grab; touch-action:none;
     background-color:var(--void);
-    background-image:radial-gradient(rgba(255,255,255,.05) 1px, transparent 1.4px);
+    background-image:radial-gradient(var(--grid) 1px, transparent 1.4px);
     background-size:52px 52px;}
   #field.drag{cursor:grabbing}
   #field::after{content:""; position:fixed; inset:0; pointer-events:none; z-index:2;
-    background:radial-gradient(ellipse at 50% 42%, transparent 30%, rgba(0,0,0,.84) 100%);}
-  #scan{position:fixed; inset:0; pointer-events:none; z-index:3; mix-blend-mode:overlay; opacity:.5;
+    background:radial-gradient(ellipse at 50% 42%, transparent 30%, var(--vignette) 100%);}
+  #scan{position:fixed; inset:0; pointer-events:none; z-index:3; mix-blend-mode:overlay; opacity:var(--scan-opacity);
     background:repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 3px);}
   #stage{position:absolute; top:0; left:0; transform-origin:0 0; will-change:transform;}
   #wires{position:absolute; top:0; left:0; overflow:visible; pointer-events:none;}
   #wires .spine{stroke:var(--bone); stroke-width:2.2; stroke-opacity:.6; fill:none;
-    stroke-dasharray:5 8; animation:flow 1.1s linear infinite; filter:drop-shadow(0 0 6px rgba(244,241,232,.5));}
+    stroke-dasharray:5 8; animation:flow 1.1s linear infinite; filter:var(--spine-glow);}
   @keyframes flow{to{stroke-dashoffset:-26}}
   .node{position:absolute; transform:translateY(-50%); white-space:nowrap;
     pointer-events:auto; cursor:default; line-height:1; user-select:none;
@@ -52,10 +87,10 @@
   #axisBot{bottom:16px; left:50%; transform:translateX(-50%);}
   #title{top:16px; left:18px; max-width:310px; letter-spacing:normal; opacity:1; line-height:1.5; text-transform:none;}
   #title b{display:block; font-family:"Times New Roman",Georgia,serif; font-size:12px; letter-spacing:.3em;
-    text-transform:uppercase; color:#fff; opacity:.85; margin-bottom:13px;}
+    text-transform:uppercase; color:var(--ink); opacity:.85; margin-bottom:13px;}
   #title .creed{display:block; font-family:"Times New Roman",Georgia,serif; font-size:13px; line-height:1.62;
     letter-spacing:.005em; text-transform:none; color:var(--bone); opacity:.5;}
-  #title .creed em{font-style:italic; color:#fff; opacity:.85;}
+  #title .creed em{font-style:italic; color:var(--ink); opacity:.85;}
   /* link back to the site lives at the BOTTOM now */
   #back{bottom:18px; left:18px; pointer-events:auto; text-decoration:none; color:var(--bone);
     opacity:.55; font-size:10px; letter-spacing:.28em; text-transform:uppercase; border:1px solid var(--dim);
@@ -65,29 +100,30 @@
   #z button{width:34px; height:34px; background:transparent; color:var(--bone); border:1px solid var(--dim);
     font:inherit; font-size:16px; cursor:pointer; border-radius:2px; opacity:.6; transition:.2s}
   #z button:hover{opacity:1; border-color:var(--bone)}
+  #ztheme .sun{display:none} html[data-theme="dark"] #ztheme .sun{display:inline} html[data-theme="dark"] #ztheme .moon{display:none}
   @media (max-width:640px){ #title{display:none} .node .tag{display:none} }
 
   /* intro overlay — read before you climb */
   #intro{position:fixed; inset:0; z-index:20; display:flex; align-items:center; justify-content:center;
-    padding:32px; background:radial-gradient(ellipse at 50% 38%, #0c0c14 0%, #050507 68%);
+    padding:32px; background:radial-gradient(ellipse at 50% 38%, var(--intro-a) 0%, var(--intro-b) 68%);
     transition:opacity .9s ease; cursor:pointer;}
-  #intro::after{content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:overlay; opacity:.5;
+  #intro::after{content:""; position:absolute; inset:0; pointer-events:none; mix-blend-mode:overlay; opacity:var(--scan-opacity);
     background:repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 3px);}
   #intro.gone{opacity:0; pointer-events:none;}
   .introInner{position:relative; max-width:600px; text-align:center; z-index:1;}
   #intro .kick{display:block; font-family:"Times New Roman",Georgia,serif; font-weight:600;
     font-size:40px; line-height:1.1; letter-spacing:.16em; text-transform:uppercase;
-    color:#fff; opacity:.96; margin-bottom:34px;
-    text-shadow:-2px 0 22px #ff1f6b88, 2px 0 22px #3d7bff88, 0 0 40px rgba(255,255,255,.25);}
+    color:var(--ink); opacity:.96; margin-bottom:34px;
+    text-shadow:-2px 0 22px var(--glow-a), 2px 0 22px var(--glow-b), var(--kick-glow);}
   #intro .lede{font-family:"Times New Roman",Georgia,serif; font-size:22px; line-height:1.62;
     color:var(--bone); margin:0 0 18px; opacity:.92;}
-  #intro .lede em{font-style:italic; color:#fff; text-shadow:0 0 16px rgba(255,255,255,.35);}
-  #intro .ask{font-family:"Times New Roman",Georgia,serif; font-size:26px; color:#fff; margin:26px 0 4px;
-    text-shadow:-2px 0 18px #ff1f6b66, 2px 0 18px #3d7bff66;}
+  #intro .lede em{font-style:italic; color:var(--ink);}
+  #intro .ask{font-family:"Times New Roman",Georgia,serif; font-size:26px; color:var(--ink); margin:26px 0 4px;
+    text-shadow:-2px 0 18px var(--glow-a), 2px 0 18px var(--glow-b);}
   #enter{margin-top:30px; cursor:pointer; background:transparent; color:var(--bone);
     border:1px solid var(--dim); border-radius:3px; padding:13px 24px; font:inherit; letter-spacing:.26em;
     text-transform:uppercase; font-size:12px; transition:.22s;}
-  #enter:hover{border-color:var(--bone); color:#fff; box-shadow:0 0 26px rgba(255,255,255,.16);}
+  #enter:hover{border-color:var(--bone); color:var(--ink);}
   @media (max-width:640px){ #intro .kick{font-size:27px} #intro .lede{font-size:18px} #intro .ask{font-size:22px} }
 </style>
 </head>
@@ -112,7 +148,7 @@
 <div class="hud" id="axisTop">▲ the one</div>
 <div class="hud" id="axisBot">the world ▼</div>
 <a id="back" href="/ideas/">← ideas</a>
-<div id="z"><button id="zout" aria-label="zoom out">−</button><button id="zin" aria-label="zoom in">+</button></div>
+<div id="z"><button id="ztheme" onclick="toggleSiteTheme()" aria-label="Change theme" title="Change theme"><span class="moon">☾</span><span class="sun">☀︎</span></button><button id="zout" aria-label="zoom out">−</button><button id="zin" aria-label="zoom in">+</button></div>
 
 <script>
 /* ---------- helpers ---------- */
@@ -329,7 +365,8 @@ walk(TREE,null,0,null);
 totalH = yCur;
 
 const css = getComputedStyle(document.documentElement);
-function color(n){ return n.accent ? css.getPropertyValue(n.accent).trim() : css.getPropertyValue('--c-root').trim(); }
+function color(n){ return `var(${n.accent || '--c-root'})`; }
+function tint(c, pct){ return `color-mix(in srgb, ${c} ${pct}%, transparent)`; }
 
 const stage=document.getElementById('stage'), wires=document.getElementById('wires');
 
@@ -344,8 +381,8 @@ nodes.forEach(n=>{
     paths += `<path class="spine" d="M${gx} ${n.y+11} L ${gx} ${last.y}"/>`;
     kids.forEach(c=>{ paths += `<path class="spine" d="M${gx} ${c.y} L ${c.x-7} ${c.y}"/>`; });
   } else {
-    paths += `<path d="M${gx} ${n.y+9} L ${gx} ${last.y}" fill="none" stroke="${color(kids[0])}" stroke-width="1" stroke-opacity="0.3"/>`;
-    kids.forEach(c=>{ paths += `<path d="M${gx} ${c.y} L ${c.x-7} ${c.y}" fill="none" stroke="${color(c)}" stroke-width="1" stroke-opacity="0.42"/>`; });
+    paths += `<path d="M${gx} ${n.y+9} L ${gx} ${last.y}" fill="none" style="stroke:${color(kids[0])}" stroke-width="1" stroke-opacity="0.3"/>`;
+    kids.forEach(c=>{ paths += `<path d="M${gx} ${c.y} L ${c.x-7} ${c.y}" fill="none" style="stroke:${color(c)}" stroke-width="1" stroke-opacity="0.42"/>`; });
   }
 });
 wires.innerHTML=paths;
@@ -362,10 +399,10 @@ nodes.forEach(n=>{
   if(n.special) size = 24;
   const col=color(n);
   let shadow;
-  if(n.depth===0) shadow = `-2px 0 20px #ff1f6b88, 2px 0 20px #3d7bff88, 0 0 34px #ffffff66`;
-  else if(isSpine) shadow = `0 0 22px #ffffff55, 0 0 7px #ffffff88`;
-  else if(n.special) shadow = `0 0 20px ${col}66, 0 0 6px ${col}`;
-  else shadow = `0 0 9px ${col}22`;
+  if(n.depth===0) shadow = `-2px 0 20px var(--glow-a), 2px 0 20px var(--glow-b), var(--root-glow)`;
+  else if(isSpine) shadow = `var(--spine-text-glow)`;
+  else if(n.special) shadow = `0 0 20px ${tint(col,40)}, 0 0 6px ${tint(col,70)}`;
+  else shadow = `0 0 9px ${tint(col,13)}`;
   el.innerHTML = `<span class="w" style="font-size:${size}px; color:${col}; `
     + `opacity:${n.depth<=1?0.95:1}; text-shadow:${shadow}">${n.w}</span>`;
   stage.appendChild(el);
