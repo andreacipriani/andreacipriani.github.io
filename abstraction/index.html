@@ -418,11 +418,11 @@ const ROT=['Oneness','God','Tao','1'];
 let rIdx=0, rTimer=null;
 const rootW = rootEl.querySelector('.w');
 function setRoot(t){ rootW.style.opacity=0; setTimeout(()=>{ rootW.textContent=t; rootW.style.opacity=0.95; },120); }
-rootEl.addEventListener('pointerenter', ()=>{
-  if(rTimer) return;
+rootEl.addEventListener('pointerenter', e=>{
+  if(e.pointerType!=='mouse' || rTimer) return;
   rTimer=setInterval(()=>{ rIdx=(rIdx+1)%ROT.length; setRoot(ROT[rIdx]); }, 820);
 });
-rootEl.addEventListener('pointerleave', ()=>{ clearInterval(rTimer); rTimer=null; rIdx=0; setRoot('Oneness'); });
+rootEl.addEventListener('pointerleave', e=>{ if(e.pointerType!=='mouse') return; clearInterval(rTimer); rTimer=null; rIdx=0; setRoot('Oneness'); });
 
 /* ---------- Language label rotates on hover: Language → Consciousness → Free will ---------- */
 const LROT=['Language','Consciousness','Free will'];
@@ -430,11 +430,11 @@ let lIdx=0, lTimer=null;
 const langW = langEl.querySelector('.w');
 langEl.style.cursor='pointer';
 function setLang(t){ langW.style.opacity=0; setTimeout(()=>{ langW.textContent=t; langW.style.opacity=0.95; },120); }
-langEl.addEventListener('pointerenter', ()=>{
-  if(lTimer) return;
+langEl.addEventListener('pointerenter', e=>{
+  if(e.pointerType!=='mouse' || lTimer) return;
   lTimer=setInterval(()=>{ lIdx=(lIdx+1)%LROT.length; setLang(LROT[lIdx]); }, 900);
 });
-langEl.addEventListener('pointerleave', ()=>{ clearInterval(lTimer); lTimer=null; lIdx=0; setLang('Language'); });
+langEl.addEventListener('pointerleave', e=>{ if(e.pointerType!=='mouse') return; clearInterval(lTimer); lTimer=null; lIdx=0; setLang('Language'); });
 
 /* ---------- pan + zoom ---------- */
 let tx=0, ty=0, s=1;
@@ -506,6 +506,23 @@ function zoomAt(cx,cy,factor){
   ty = cy - (cy-ty)*(ns/s);
   s = ns; apply();
 }
+/* ---------- touch: tap a rotating word to flip to the next one (a drag still pans) ---------- */
+let tapStart=null;
+field.addEventListener('pointerdown', e=>{
+  if(e.pointerType==='mouse') return;
+  const hit = rootEl.contains(e.target) ? 'root' : (langEl.contains(e.target) ? 'lang' : null);
+  tapStart = hit ? { hit, x:e.clientX, y:e.clientY } : null;
+}, true);
+addEventListener('pointerup', e=>{
+  if(!tapStart || e.pointerType==='mouse') return;
+  const moved = Math.hypot(e.clientX-tapStart.x, e.clientY-tapStart.y);
+  if(moved < 10){
+    if(tapStart.hit==='root'){ rIdx=(rIdx+1)%ROT.length; setRoot(ROT[rIdx]); }
+    else { lIdx=(lIdx+1)%LROT.length; setLang(LROT[lIdx]); }
+  }
+  tapStart=null;
+}, true);
+
 document.getElementById('zin').onclick=()=>zoomAt(innerWidth/2,innerHeight/2,1.25);
 document.getElementById('zout').onclick=()=>zoomAt(innerWidth/2,innerHeight/2,1/1.25);
 
