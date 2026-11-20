@@ -19,11 +19,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Ciao! I'm Andrea, I'm Italian and I work as a software engineer in NYC. I specialize in **mobile development** at scale, with a decade of experience in **iOS**.
+Ciao! I'm Andrea. I grew up in Italy, live in New York, and build iOS apps for a living, currently at Airbnb. I specialize in **mobile development** at scale, with over a decade of experience.
 
 Throughout my career, I have had the privilege of working for apps used all over the globe, including **Airbnb**, **Apple Sports**, **Spotify**, **SoundCloud** and **Google**.
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 32px; margin-top: 25px; margin-bottom: 28px; font-size: 2.2rem; color: var(--global-text-color);">
+<div class="company-logos" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; margin-top: 25px; margin-bottom: 28px; font-size: 2.2rem; color: var(--global-text-color);">
   <span title="Airbnb"><i class="fa-brands fa-airbnb"></i></span>
   <span title="Spotify"><i class="fa-brands fa-spotify"></i></span>
   <span title="Apple"><i class="fa-brands fa-apple"></i></span>
@@ -43,6 +43,10 @@ I love exploring new places and traveling, Hawaii is my favorite so far! I fence
   .hover-effect:hover {
     opacity: 0.8;
     transition: opacity 0.3s ease;
+  }
+
+  @media (max-width: 576px) {
+    .company-logos { gap: 20px !important; font-size: 1.8rem !important; }
   }
 
   /* Vision Pro photo on hover */

@@ -197,9 +197,9 @@ let initTheme = (theme) => {
 initTheme(localStorage.getItem("theme"));
 
 document.addEventListener("DOMContentLoaded", function () {
-  const mode_toggle = document.getElementById("light-toggle");
-
-  mode_toggle.addEventListener("click", function () {
-    toggleTheme(localStorage.getItem("theme"));
+  document.querySelectorAll("#light-toggle, .theme-toggle-mobile").forEach(function (mode_toggle) {
+    mode_toggle.addEventListener("click", function () {
+      toggleTheme(localStorage.getItem("theme"));
+    });
   });
 });

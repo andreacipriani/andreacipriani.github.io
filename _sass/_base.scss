@@ -377,6 +377,24 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.theme-toggle-mobile {
+  padding: 0 0.75rem;
+  border: 0;
+  background-color: inherit;
+  color: var(--global-text-color-light);
+  opacity: 0.8;
+
+  .fa-moon,
+  .fa-sun {
+    padding: 0 !important;
+  }
+
+  &:hover {
+    color: var(--global-hover-color);
+    opacity: 1;
+  }
+}
+
 // Social (bottom)
 
 .social {

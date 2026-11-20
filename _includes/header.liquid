@@ -24,9 +24,16 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
+      {% if site.enable_darkmode %}
+        <!-- Theme toggle, always visible on small screens -->
+        <button class="theme-toggle-mobile d-sm-none ml-auto" title="Change theme" aria-label="Change theme">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      {% endif %}
       <!-- Navbar Toggle -->
       <button
-        class="navbar-toggler collapsed ml-auto"
+        class="navbar-toggler collapsed{% unless site.enable_darkmode %} ml-auto{% endunless %}"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -109,7 +116,7 @@
           {% endfor %}
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
-            <li class="toggle-container">
+            <li class="toggle-container d-none d-sm-block">
               <button id="light-toggle" title="Change theme">
                 <i class="fa-solid fa-moon"></i>
                 <i class="fa-solid fa-sun"></i>

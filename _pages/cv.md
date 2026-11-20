@@ -4,7 +4,6 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 2
-cv_pdf: AndreaCipriani_CV.pdf
 description: Last update in May 2026.
 toc:
   sidebar: left
