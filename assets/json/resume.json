@@ -20,6 +20,13 @@
   },
   "work": [
     {
+      "name": "Airbnb",
+      "position": "Software Engineer, iOS Platform",
+      "startDate": "2026",
+      "summary": "Working on the iOS platform team at Airbnb.",
+      "highlights": ["iOS", "Swift", "Mobile Platform"]
+    },
+    {
       "name": "Apple",
       "position": "Software Engineer",
       "startDate": "2024",

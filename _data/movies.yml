@@ -32,9 +32,6 @@ favorites:
   - title: Requiem for a Dream
     image: https://m.media-amazon.com/images/M/MV5BOTdiNzJlOWUtNWMwNS00NmFlLWI0YTEtZmI3YjIzZWUyY2Y3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt0180093
-  # - title: Anchiporuno
-  #   image: https://m.media-amazon.com/images/M/MV5BOWU5YmMwMDktNzJkZi00NWRiLWFmYTYtODY4MjIyN2ZlYjA2XkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_UX140_CR0,0,140,209_AL_.jpg
-  #   imdb_link: https://www.imdb.com/title/tt5973032/
   - title: Her
     image: https://m.media-amazon.com/images/M/MV5BMjA1Nzk0OTM2OF5BMl5BanBnXkFtZTgwNjU2NjEwMDE@._V1_UY209_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt1798709/
@@ -74,9 +71,6 @@ favorites:
   - title: Annie Hall
     image: https://m.media-amazon.com/images/M/MV5BZDg1OGQ4YzgtM2Y2NS00NjA3LWFjYTctMDRlMDI3NWE1OTUyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg
     imdb_link: https://www.imdb.com/title/tt0075686/?ref_=rt_li_i
-  - title: Blue Jasmine
-    image: https://m.media-amazon.com/images/M/MV5BMTc0ODk5MzEyMV5BMl5BanBnXkFtZTcwMzI0MDY1OQ@@._V1_UY209_CR0,0,140,209_AL_.jpg
-    imdb_link: https://www.imdb.com/title/tt2334873/?ref_=rt_li_i
   - title: Okja
     image: https://image.tmdb.org/t/p/w200/pHlRr2MfjK77VIIAO7p0R4jhsJI.jpg
     imdb_link: https://www.imdb.com/title/tt3967856/?ref_=rt_li_i
@@ -119,4 +113,12 @@ favorites:
   - title: Triangle of Sadness
     image: https://image.tmdb.org/t/p/w200/k9eLozCgCed5FGTSdHu0bBElAV8.jpg
     imdb_link: https://www.imdb.com/title/tt7322224/?ref_=rt_li_i
-     
+  - title: Salò o le 120 giornate di Sodoma
+    image: https://image.tmdb.org/t/p/w200/rQuqWaC14GTD5ow6iadfEZxXxdI.jpg
+    imdb_link: https://www.imdb.com/title/tt0073650/
+  - title: Casablanca
+    image: https://image.tmdb.org/t/p/w200/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg
+    imdb_link: https://www.imdb.com/title/tt0034583/
+  - title: Sentimental Value
+    image: https://image.tmdb.org/t/p/w200/pz9NCWxxOk3o0W3v1Zkhawrwb4i.jpg
+    imdb_link: https://www.imdb.com/title/tt27714581/
