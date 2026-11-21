@@ -21,14 +21,14 @@ social: true # includes social icons at the bottom of the page
 
 Ciao! I'm Andrea. I grew up in Italy, live in New York, and build iOS apps for a living, currently at Airbnb. I specialize in mobile development at scale, with over a decade of experience.
 
-Throughout my career, I have had the privilege of working for apps used all over the globe, including Airbnb, Apple Sports, Spotify, SoundCloud and Google.
+Throughout my career, I have had the privilege of working for apps used all over the globe, including Spotify, Apple Sports, Google, SoundCloud and Airbnb.
 
 <div class="company-logos" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; margin-top: 25px; margin-bottom: 28px; font-size: 2.2rem; color: var(--global-text-color);">
-  <span title="Airbnb"><i class="fa-brands fa-airbnb"></i></span>
   <span title="Spotify"><i class="fa-brands fa-spotify"></i></span>
   <span title="Apple"><i class="fa-brands fa-apple"></i></span>
-  <span title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></span>
   <span title="Google"><i class="fa-brands fa-google"></i></span>
+  <span title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></span>
+  <span title="Airbnb"><i class="fa-brands fa-airbnb"></i></span>
 </div>
 
 I love exploring new places and traveling, Hawaii is my favorite so far! I fenced competitively in my twenties and now I enjoy casual (mostly racket) sports, taking a dip in the ocean, testing my skills at Texas Hold'em poker and appreciating beautiful things, mostly in the form of cinema, books and music.
