@@ -107,7 +107,7 @@ class KeyView: NSView {
 
 ##### Focusing a TextField programmatically
 
-One of the biggest challenge was fine-tuning TextField interactions, specifically setting it on focus after certain events like arrow navigation or shortcuts. I ended up writing a custom Text Field solution using AppKit, inspired by [this article](https://serialcoder.dev/text-tutorials/macos-tutorials/macos-programming-implementing-a-focusable-text-field-in-swiftui/).
+One of the biggest challenge was fine-tuning TextField interactions, specifically setting it on focus after certain events like arrow navigation or shortcuts. I ended up writing a custom Text Field solution using AppKit, inspired by [this article](https://web.archive.org/web/20251118192311/https://serialcoder.dev/text-tutorials/macos-tutorials/macos-programming-implementing-a-focusable-text-field-in-swiftui/).
 
 Then I created a central coordinator to broadcast keyboard events, using the notification center, something as simple as:
 

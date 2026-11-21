@@ -9,7 +9,7 @@ tags: [iOS, Android, Backend]
 giscus_comments: false
 ---
 
-During my first startup adventure – in Italy between 2013-2016 at [Code Atlas SRL](https://www.codeatlas.it) – we designed and built [Veecards](http://www.veecards.com): an app to improve contacts' management.
+During my first startup adventure – in Italy between 2013-2016 at [Code Atlas SRL](https://www.codeatlas.it) – we designed and built [Veecards](https://web.archive.org/web/20260612013723/http://www.veecards.com/): an app to improve contacts' management.
 
 Watch an intro video:
 
